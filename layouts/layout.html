@@ -3,15 +3,13 @@
 <head>
   <meta charset="UTF-8" />
 
-  <title>{{ title }}</title>
+  <title>{% block title %}{% endblock %}</title>
   <meta name="description" content="{{ description }}" />
 </head>
 
 <body>
 
-<div id="content">
-  <p>Why, hello there!</p>
-</div>
+<h1>{{ self.title() }}</h1>
 
 {% block content %}{% endblock %}
 

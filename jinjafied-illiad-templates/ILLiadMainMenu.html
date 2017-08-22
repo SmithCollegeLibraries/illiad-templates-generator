@@ -1,9 +1,7 @@
-<html>
-<head>
-<title>ILLiad Main Menu</title>
-<#INCLUDE filename="include_head.html">
-</head>
-<body id="type-c">
+{% extends "layouts/layout.html" %}
+{% block title %}Interlibrary Loan - Smith College Libraries{% endblock %}
+
+{% block content %}
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
     <div id="content-wrap">
@@ -19,5 +17,4 @@
             <br />
             <#ALERTS> </div>
     </div>
-</body>
-</html>
+{% endblock %}
