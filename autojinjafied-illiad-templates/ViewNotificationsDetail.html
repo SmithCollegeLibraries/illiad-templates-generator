@@ -1,0 +1,24 @@
+
+{% extends "layouts/layout.html" %}
+{% block title %}Notification{% endblock %}
+
+{% block content %}
+<div id="wrap">
+    <#INCLUDE filename="include_header.html">
+    <h1>{{ self.title() }}</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ <div class="default-table simple-table">
+  <#TABLE name="NotificationInformation" headerText="Notification Information" hideColumnHeaders="true">
+  <br/>
+ </div>
+ <#INCLUDE filename="include_footer.html">
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+{% endblock %}

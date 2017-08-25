@@ -1,0 +1,204 @@
+
+{% extends "layouts/layout.html" %}
+{% block title %}Standards Document Request{% endblock %}
+
+{% block content %}
+<div id="wrap">
+    <#INCLUDE filename="include_header.html">
+    <h1>{{ self.title() }}</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ <form action="illiad.dll" class="f-wrap-request" method="post" name="StandardsDocumentRequest">
+  <input name="ILLiadForm" type="hidden" value="StandardsDocumentRequest"/>
+  <input name="Username" type="hidden" username"="" value="<#PARAM name="/>
+  ">
+  <input name="SessionID" sessionid"="" type="hidden" value="<#PARAM name="/>
+  ">
+  <div class="req">
+   <b>
+    *
+   </b>
+   Indicates required field
+  </div>
+  <fieldset>
+   <h3>
+    Standards Document Request
+   </h3>
+   <#STATUS>
+   <h2>
+    Describe the item you want
+   </h2>
+   <label for="PhotoJournalTitle">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorphotojournaltitle"="">
+      ">
+      <b>
+       Title
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      Please do not abbreviate unless your citation is abbreviated
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="PhotoJournalTitle" name="PhotoJournalTitle" rows="2"><#PARAM name="PhotoJournalTitle"></textarea>
+    <br/>
+   </label>
+   <label for="PhotoItemPublisher">
+    <span class="field">
+     <span class="<#ERROR name=" errorphotoitempublisher"="">
+      ">
+      <b>
+       Agency
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoItemPublisher" name="PhotoItemPublisher" photoitempublisher"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="PhotoJournalYear">
+    <span class="field">
+     <span class="<#ERROR name=" errorphotojournalyear"="">
+      ">
+      <b>
+       Year
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" photojournalyear"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="PhotoItemEdition">
+    <span class="field">
+     <span class="<#ERROR name=" errorphotoitemedition"="">
+      ">
+      <b>
+       Standard Number
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoItemEdition" name="PhotoItemEdition" photoitemedition"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="CallNumber">
+    <span class="field">
+     <span class="<#ERROR name=" errorcallnumber"="">
+      ">
+      <b>
+       Call Number
+      </b>
+     </span>
+    </span>
+    <input callnumber"="" class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="ESPNumber">
+    <span class="field">
+     <span class="<#ERROR name=" errorespnumber"="">
+      ">
+      <b>
+       OCLC or Docline UI Number
+      </b>
+     </span>
+    </span>
+    <input class="f-name" espnumber"="" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="NotWantedAfter">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errornotwantedafter"="">
+      ">
+      <b>
+       Not Wanted After Date
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      (MM/DD/YYYY)
+     </span>
+    </span>
+    <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" notwantedafter"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="AcceptNonEnglish">
+    <span class="field">
+     <span class="<#ERROR name=" erroracceptnonenglish"="">
+      ">
+      <b>
+       Will you accept the item in a language other than English?
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      If yes, specify acceptable languages in the notes field.
+     </span>
+    </span>
+    <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
+     <option selected="">
+      <#PARAM name="AcceptNonEnglish">
+     </option>
+     <option>
+      No
+     </option>
+     <option>
+      Yes
+     </option>
+    </select>
+    <br/>
+   </label>
+   <label for="AccountNo">
+    <span class="field">
+     <span class="<#ERROR name=" erroraccountno"="">
+      ">
+      <b>
+       Account Number
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="AccountNo" name="AccountNo" size="1">
+     <#OPTION name="ValidAccounts">
+    </select>
+    <br/>
+   </label>
+   <label for="Notes">
+    <span class="field">
+     <span class="<#ERROR name=" errornotes"="">
+      ">
+      <b>
+       Notes
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      Put any information here that may help us find the item, as well as any other pertinent information.
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
+    <br/>
+   </label>
+   <#INCLUDE filename="include_request_cited.html">                
+                    <#INCLUDE filename="include_request_buttons.html">
+  </fieldset>
+ </form>
+ <#INCLUDE filename="include_footer.html">
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+{% endblock %}
