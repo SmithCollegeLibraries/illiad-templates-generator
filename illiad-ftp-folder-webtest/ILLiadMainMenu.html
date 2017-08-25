@@ -64,7 +64,7 @@
         <!-- header-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
         <div class="container">
             <figure class="logo">
-                <a href="#">
+                <a href="https://www.smith.edu/libraries">
                     <img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-logo.png" width="191" height="59" alt="Smith College Libraries" class="hidden-xs hidden-sm">
                     <div class="visible-xs visible-sm mobile-logo">Smith College Libraries</div>
                 </a>
@@ -162,25 +162,28 @@
         <section class="content tier-content" id="skipToContent" role="region">
             <!-- home-content starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
-            <h1>Interlibrary Loan</h1>
             <!-- MAIN CONTENT AREA -->
-            
+            <div class="container">
+              <div class="row">
+                
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
+    <h1>Interlibrary Loan</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
-        <div id="content">
+        <div class="col-sm-10">
             <div class="default-table" id="table-main-outstanding-requests">
                 <#TABLE name="ViewOutstandingRequests" headerText="Outstanding Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" column="TransactionNumber:Transaction" column="DocumentType:Type" column="Title" column="Author" column="TransactionStatus:Status">
             </div>
-            <#INCLUDE filename="include_footer.html">
-        </div>
-        <div id="content">
             <a href="<#ACTION action="2" type="40" value="RSSID" valueType="lookup" absolutePath="false" includeSessionID="false">">Subscribe to Alerts Feed</a>
             <br />
-            <#ALERTS> </div>
+            <#ALERTS>
+            <#INCLUDE filename="include_footer.html">
+        </div>
     </div>
 
+              </div>
+            </div>
             <!-- / MAIN CONTENT AREA -->
 
             <!-- home-content ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->

@@ -64,7 +64,7 @@
         <!-- header-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
         <div class="container">
             <figure class="logo">
-                <a href="#">
+                <a href="https://www.smith.edu/libraries">
                     <img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-logo.png" width="191" height="59" alt="Smith College Libraries" class="hidden-xs hidden-sm">
                     <div class="visible-xs visible-sm mobile-logo">Smith College Libraries</div>
                 </a>
@@ -162,9 +162,12 @@
         <section class="content tier-content" id="skipToContent" role="region">
             <!-- home-content starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 
-            <h1>{{ self.title() }}</h1>
             <!-- MAIN CONTENT AREA -->
-            {% block content %}{% endblock %}
+            <div class="container">
+              <div class="row">
+                {% block content %}{% endblock %}
+              </div>
+            </div>
             <!-- / MAIN CONTENT AREA -->
 
             <!-- home-content ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
