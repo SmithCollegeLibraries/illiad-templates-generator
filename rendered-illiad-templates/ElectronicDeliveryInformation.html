@@ -1,117 +1,483 @@
-<html>
+
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
 <head>
-<meta http-equiv="Pragma" content="no-cache">
-<title>ILLiad Electronic Delivery Information</title>
-<#INCLUDE filename="include_head.html">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>ILLiad Electronic Delivery Information - Interlibrary Loan, Smith College Libraries</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ILLiad specific css/js files -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)" />
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
+    <script type="text/javascript" src="js/illiad.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/jquery/jquery-1.9.1.min.js"></script>
+    <script src="https://use.fontawesome.com/e8941a2fd6.js"></script>
+    <script src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/modernizr/modernizr.custom.js"></script>
+
+
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/css/main-styles-blessed-blessed1.css"><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/css/main-styles-blessed.css"><![endif]-->
+    <!--[if gt IE 9]> <!-- --><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/css/main-styles.css"><!-- <![endif]-->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
 </head>
-<body id="type-a">
+
+<!--[if lt IE 7]>      <body class="lt-ie9 lt-ie8 lt-ie7 library-subsite"> <![endif]-->
+<!--[if IE 7]>         <body class="lt-ie9 lt-ie8 library-subsite"> <![endif]-->
+<!--[if IE 8]>         <body class="lt-ie9 library-subsite"> <![endif]-->
+<!--[if IE 9]>         <body class="ie9 library-subsite"> <![endif]-->
+<!--[if gt IE 9]><!--> <body class="library-subsite"> <!--<![endif]-->
+
+<a class="skip-nav" href="#skipToContent" role="link"  tabIndex="0">Skip Navigation</a>
+
+<div class="main-container">
+    <!-- main-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <div class="global-menu">
+        <div class="container">
+            <p><a href="#">Visit Smith.edu</a></p>
+            <nav class="global-nav-container" role="navigation">
+                <!-- global-nav-container starts -->
+                <ul class="global-nav">
+                    <li class="has-menu"><a href="#" data-target="#account-renew" role="menuitem" aria-controls="account-renew" aria-expanded="false" id="account-renew-menuitem">My Account/Renew</a></li>
+                    <li class="give-smith"><a href="#">The New Nelson Library</a></li>
+                </ul>
+                <!-- /global-nav-container ends -->
+            </nav>
+        </div>
+
+    </div>
+    <header class="header-container" role="banner">
+        <!-- header-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container">
+            <figure class="logo">
+                <a href="https://www.smith.edu/libraries">
+                    <img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-logo.png" width="191" height="59" alt="Smith College Libraries" class="hidden-xs hidden-sm">
+                    <div class="visible-xs visible-sm mobile-logo">Smith College Libraries</div>
+                </a>
+            </figure>
+            <a href="#" class="mobile-nav-icon menu"><span class="sr-only">Menu</span></a>
+        </div>
+        <!-- header-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </header>
+
+    <div class="hours-module full-width">
+        <div class="collapse" id="hours-content">
+            <div class="well">
+                <div class="container">
+                    <div class="hours-wrapper">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="hour-inner-left">
+                                    <h3>Todays Hours</h3>
+                                    <table>
+                                        <tr>
+                                            <td><strong>Nielson Library</strong></td>
+                                            <td>8:00am-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Hillyer Library</strong></td>
+                                            <td>9:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Josten Performing Arts Library</strong></td>
+                                            <td>10:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Young Science Library</strong></td>
+                                            <td>9:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mortimor Rare Book Room</strong></td>
+                                            <td>9:00am-12:00pm, 1:00pm-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>College Archives</strong></td>
+                                            <td>10:00am-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sophia Smith Collection</strong></td>
+                                            <td>10:00am-5:00pm</td>
+                                        </tr>
+                                    </table>
+                                    <div class="full-link">
+                                        <a href="#">View all Hours</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="hour-inner-right">
+                                    <h3>Ask a Librarian</h3>
+                                    <div class="hours-content-box">
+                                        <h4>Neilson Library Reference Desk</h4>
+                                        <p>Mon.-Fri.: 10 am-5 pm</p>
+                                        <p class="telephone">Call (413) 585-2960</p>
+                                        <p class="email"><a href="mailto:test@test.com">Email Us</a></p>
+                                    </div>
+                                    <div class="hours-content-box">
+                                        <h4>Neilson Library Circulation Desk</h4>
+                                        <p>The Circulation Desk is open during all library hours.</p>
+                                        <p class="telephone">Call (413) 585-2960</p>
+                                        <p class="email"><a href="mailto:test@test.com">Email Us</a></p>
+                                    </div>
+                                    <div class="full-link">
+                                        <a href="#">Staff Directory</a>
+                                    </div>
+                                    <div class="full-link">
+                                        <a href="#" class="green">More ways to connect</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="close-menu"><span class="icon">X</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <div class="container">
+                <button aria-expanded="false" aria-controls="hours-content" class="hours-button collapsed"  type="button" data-toggle="collapse" data-target="#hours-content">
+                    Hours & Contact
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tier-container" id="main" role="main">
+        <!-- home-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <section class="content tier-content" id="skipToContent" role="region">
+            <!-- home-content starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+            <!-- MAIN CONTENT AREA -->
+            <div class="container">
+              <div class="row">
+                
 <div id="wrap">
-  	<div id="header">
-  		<span id="site-name">ILLiad</span>
-  	</div>			
-  	<div id="content-wrap">
-    	<div id="content" class="faq">
-			<h2>ILLiad Electronic Delivery Information<a name="contents" /></h2>
-			
-			<p>ILLiad offers the convenient option of having articles delivered to you without ever going to the library or waiting for mail delivery.<br />
-			Expect electronic articles to be available on your virtual desktop a few days sooner than a paper photocopy would arrive on your real desktop.<br />
-			Electronic delivery is available for items that are delivered to us electronically from the lending library</p>
-			
-<div id="faq-toc">
-	<ul>					
-		<li><a href="#signup" target="_self">How do I sign up for electronic delivery?</a></li>
-		<li><a href="#computer" target="_self">How do I know if my computer can receive electronic articles?</a></li>
-		<li><a href="#acrobat" target="_self">How do I get Adobe Acrobat Reader?</a></li>
-		<li><a href="#articles" target="_self">How do I get my articles when they arrive?</a></li>
-		<li><a href="#which">How do I know which requests will be electronically delivered and which ones will not?</a></li>
-		<li><a href="#dontwant" target="_self">What if I do not want electronic delivery?</a></li>
-		<li><a href="#questions">What if I have questions about electronic delivery?</a></li>
-	</ul>
-</div>
-			
-<div id="faq-contents">
-	<a name="signup"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>How do I sign up for electronic delivery?</h3>
-
-			<ol>
-				<li>Logon to ILLiad</li>
-				<li>From the main menu, click the &quot;Change&quot; link under the Personal Information options.</li>
-				<li>For the choice &quot;Preferred Electronic Delivery if Possible (via web through ILLiad)&quot; choose &quot;Yes&quot; to have your electronic articles posted to your ILLiad account.</li>
-			</ol>				
-		</div>
-	</div>
-
-	<a name="computer"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>How do I know if my computer can receive electronic articles?</h3>
-
-			<p>You will need Adobe Acrobat Reader installed and configured to work with your Web
+    <#INCLUDE filename="include_header.html">
+    <h1>ILLiad Electronic Delivery Information</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div class="faq">
+ <h2>
+  ILLiad Electronic Delivery Information
+  <a name="contents">
+  </a>
+ </h2>
+ <a name="contents">
+  <p>
+   ILLiad offers the convenient option of having articles delivered to you without ever going to the library or waiting for mail delivery.
+   <br/>
+   Expect electronic articles to be available on your virtual desktop a few days sooner than a paper photocopy would arrive on your real desktop.
+   <br/>
+   Electronic delivery is available for items that are delivered to us electronically from the lending library
+  </p>
+ </a>
+ <div id="faq-toc">
+  <a name="contents">
+  </a>
+  <ul>
+   <a name="contents">
+   </a>
+   <li>
+    <a name="contents">
+    </a>
+    <a href="#signup" target="_self">
+     How do I sign up for electronic delivery?
+    </a>
+   </li>
+   <li>
+    <a href="#computer" target="_self">
+     How do I know if my computer can receive electronic articles?
+    </a>
+   </li>
+   <li>
+    <a href="#acrobat" target="_self">
+     How do I get Adobe Acrobat Reader?
+    </a>
+   </li>
+   <li>
+    <a href="#articles" target="_self">
+     How do I get my articles when they arrive?
+    </a>
+   </li>
+   <li>
+    <a href="#which">
+     How do I know which requests will be electronically delivered and which ones will not?
+    </a>
+   </li>
+   <li>
+    <a href="#dontwant" target="_self">
+     What if I do not want electronic delivery?
+    </a>
+   </li>
+   <li>
+    <a href="#questions">
+     What if I have questions about electronic delivery?
+    </a>
+   </li>
+  </ul>
+ </div>
+ <div id="faq-contents">
+  <a name="signup">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     How do I sign up for electronic delivery?
+    </h3>
+    <ol>
+     <li>
+      Logon to ILLiad
+     </li>
+     <li>
+      From the main menu, click the "Change" link under the Personal Information options.
+     </li>
+     <li>
+      For the choice "Preferred Electronic Delivery if Possible (via web through ILLiad)" choose "Yes" to have your electronic articles posted to your ILLiad account.
+     </li>
+    </ol>
+   </div>
+  </div>
+  <a name="computer">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     How do I know if my computer can receive electronic articles?
+    </h3>
+    <p>
+     You will need Adobe Acrobat Reader installed and configured to work with your Web
 			browser in order to view, download, and print these articles. If you can read the sample page,
 			then your computer has the necessary software installed to work with your Web browser.
 			However, if your computer tells you the file type is unknown and asks if you want to save
-			the file to disk, then you need to install the Adobe Acrobat Reader software.</p>
-		</div>
-	</div>
-
-	<a name="acrobat"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>How do I get Adobe Acrobat Reader?</h3>
-
-			<p>Adobe Acrobat Reader is available without charge from <a href="http://www.adobe.com" target="_blank">Adobe Systems, Inc.</a> Click the &quot;Get Adobe Reader&quot; button to go directly
-			to the download page.</p>
-		</div>
-	</div>
-	
-	<a name="articles"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>How do I get my articles when they arrive?</h3>
-
-			<ol>
-				<li>Logon to ILLiad</li>
-				<li>From the main menu, click the &quot;Electronically Received Articles&quot; link under the View Requests options.</li>
-				<li>A list will be displayed containing all of the items that you have waiting to be viewed or downloaded.</li>
-			</ol>			
-		</div>
-	</div>
-	
-	<a name="which"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>How do I know which requests will be electronically delivered and which ones will not?</h3>
-
-			<p>ILLiad sends you an e-mail notification for each item received. That e-mail will include information about the delivery method.</p>
-		</div>
-	</div>
-
-	<a name="dontwant"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>What if I do not want electronic delivery?</h3>
-
-			<p>Paper delivery is the ILLiad default. Electronic delivery will be provided only if you choose it as an option on your Personal Information Form in ILLiad.</p>
-		</div>
-	</div>
-
-	<a name="questions"></a>
-	<div class="faq-item">
-		<div class="faq-item-box">
-			<h3>What if I have questions about electronic delivery?</h3>
-
-			<p>You can e-mail questions to <a href="mailto:ill@vt.edu">ill@yoursite.name</a> or call us at 555-1212.</p>
-		</div>
-	</div>
+			the file to disk, then you need to install the Adobe Acrobat Reader software.
+    </p>
+   </div>
+  </div>
+  <a name="acrobat">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     How do I get Adobe Acrobat Reader?
+    </h3>
+    <p>
+     Adobe Acrobat Reader is available without charge from
+     <a href="http://www.adobe.com" target="_blank">
+      Adobe Systems, Inc.
+     </a>
+     Click the "Get Adobe Reader" button to go directly
+			to the download page.
+    </p>
+   </div>
+  </div>
+  <a name="articles">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     How do I get my articles when they arrive?
+    </h3>
+    <ol>
+     <li>
+      Logon to ILLiad
+     </li>
+     <li>
+      From the main menu, click the "Electronically Received Articles" link under the View Requests options.
+     </li>
+     <li>
+      A list will be displayed containing all of the items that you have waiting to be viewed or downloaded.
+     </li>
+    </ol>
+   </div>
+  </div>
+  <a name="which">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     How do I know which requests will be electronically delivered and which ones will not?
+    </h3>
+    <p>
+     ILLiad sends you an e-mail notification for each item received. That e-mail will include information about the delivery method.
+    </p>
+   </div>
+  </div>
+  <a name="dontwant">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     What if I do not want electronic delivery?
+    </h3>
+    <p>
+     Paper delivery is the ILLiad default. Electronic delivery will be provided only if you choose it as an option on your Personal Information Form in ILLiad.
+    </p>
+   </div>
+  </div>
+  <a name="questions">
+  </a>
+  <div class="faq-item">
+   <div class="faq-item-box">
+    <h3>
+     What if I have questions about electronic delivery?
+    </h3>
+    <p>
+     You can e-mail questions to
+     <a href="mailto:ill@vt.edu">
+      ill@yoursite.name
+     </a>
+     or call us at 555-1212.
+    </p>
+   </div>
+  </div>
+ </div>
+ <div id="footer">
+  Copyright © 2011
+  <a href="http://www.atlas-sys.com">
+   Atlas Systems, Inc.
+  </a>
+  All Rights Reserved.
+ </div>
 </div>
 
-<div id="footer">
-    Copyright &copy; 2011 <a href="http://www.atlas-sys.com">Atlas Systems, Inc.</a> All Rights Reserved.
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+
+              </div>
+            </div>
+            <!-- / MAIN CONTENT AREA -->
+
+            <!-- home-content ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        </section>
+
+        <!-- home-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </div>
+
+    <footer class="footer-container" role="contentinfo">
+        <!-- footer-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"><img class="img-responsive" src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-footer-logo-2x.png" width="411" height="25" alt=""></div>
+                <div class="col-sm-6 hidden-xs"><h3>Content. Connection. Community.</h3> </div>
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <label class="sr-only" for="global-search-footer">Search</label>
+                        <input id="global-search-footer" type="text" class="form-control" placeholder="Explore the Librarie's Site">
+                        <a href="#" class="input-group-addon btn" title="Search"> Search</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <div class="footer-links">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="green-links">
+                                            <li><a href="#">Smith.edu</a></li>
+                                            <li><a href="#">Smith Email</a></li>
+                                            <li><a href="#">Smith Portal</a></li>
+                                            <li><a href="#">Smith Moodle</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Hours & Locations</a></li>
+                                            <li><a href="#">My Account/Renew</a></li>
+                                            <li><a href="#">Ask a Librarian</a></li>
+                                            <li><a href="#">Staff Directory</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Interlibrary Loan</a></li>
+                                            <li><a href="#">Reserve Study Space</a></li>
+                                            <li><a href="#">Borrowing & Access</a></li>
+                                            <li><a href="#">News & Events</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="footer-address">
+                                <p class="address">7 Neilson Drive</p>
+                                <p class="city">Northampton, Massachusetts, 01063</p>
+                                <p class="phone">Phone: 413-585-2910</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-4">
+                    <div class="campaign-callout">
+                        <a href="#">
+                            <div class="content">
+                                <figure>
+                                    <!--<img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-footer-callout.jpg" alt="">-->
+                                </figure>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="social-footer">
+                        <ul>
+                            <li class="facebook"><a href="#"><span class="sr-only">Facebook</span><i class="fa fa-facebook">&nbsp;</i></a></li>
+                            <li class="twitter"><a href="#"><span class="sr-only">Twitter</span><i class="fa fa-twitter">&nbsp;</i></a></li>
+                            <li class="instagram"><a href="#"><span class="sr-only">Instagram</span><i class="fa fa-instagram">&nbsp;</i></a></li>
+                            <li class="youtube"><a href="#"><span class="sr-only">Youtube</span><i class="fa fa-youtube">&nbsp;</i></a></li>
+                            <li class="pinterest"><a href="#"><span class="sr-only">Pinterest</span><i class="fa fa-pinterest">&nbsp;</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="copyright">
+                        <li>&copy; Smith College</li>
+                        <li><a href="#">Legal/Privacy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Title IX</a></li>
+                        <li><a href="#">Consumer Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </footer>
+
+    <!-- main-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
 </div>
-</div>    
-</div>
-</div>
+<div id="modalOverlay" tabindex="-1"></div>
+<script data-main="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/main" src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/require/require.js"></script>
+
 </body>
 </html>

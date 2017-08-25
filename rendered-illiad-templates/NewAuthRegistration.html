@@ -1,228 +1,695 @@
-<html>
+
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+
 <head>
-<title>ILLiad - New Authenticated User Registration</title>
-<#INCLUDE filename="include_head.html">
-    <script type="text/javascript" src="js/userNotificationPreferences.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <title>New Authenticated User Registration - Interlibrary Loan, Smith College Libraries</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- ILLiad specific css/js files -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="css/mobile.css" media="only screen and (max-device-width: 480px)" />
+    <link rel="stylesheet" type="text/css" href="css/print.css" media="print" /> 
+    <script type="text/javascript" src="js/illiad.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/jquery/jquery-1.9.1.min.js"></script>
+    <script src="https://use.fontawesome.com/e8941a2fd6.js"></script>
+    <script src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/modernizr/modernizr.custom.js"></script>
+
+
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/css/main-styles-blessed-blessed1.css"><![endif]-->
+    <!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/css/main-styles-blessed.css"><![endif]-->
+    <!--[if gt IE 9]> <!-- --><link rel="stylesheet" type="text/css" href="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/css/main-styles.css"><!-- <![endif]-->
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="icon" href="../favicon.ico" type="image/x-icon">
+
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
 </head>
-<body id="type-b">
+
+<!--[if lt IE 7]>      <body class="lt-ie9 lt-ie8 lt-ie7 library-subsite"> <![endif]-->
+<!--[if IE 7]>         <body class="lt-ie9 lt-ie8 library-subsite"> <![endif]-->
+<!--[if IE 8]>         <body class="lt-ie9 library-subsite"> <![endif]-->
+<!--[if IE 9]>         <body class="ie9 library-subsite"> <![endif]-->
+<!--[if gt IE 9]><!--> <body class="library-subsite"> <!--<![endif]-->
+
+<a class="skip-nav" href="#skipToContent" role="link"  tabIndex="0">Skip Navigation</a>
+
+<div class="main-container">
+    <!-- main-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+    <div class="global-menu">
+        <div class="container">
+            <p><a href="#">Visit Smith.edu</a></p>
+            <nav class="global-nav-container" role="navigation">
+                <!-- global-nav-container starts -->
+                <ul class="global-nav">
+                    <li class="has-menu"><a href="#" data-target="#account-renew" role="menuitem" aria-controls="account-renew" aria-expanded="false" id="account-renew-menuitem">My Account/Renew</a></li>
+                    <li class="give-smith"><a href="#">The New Nelson Library</a></li>
+                </ul>
+                <!-- /global-nav-container ends -->
+            </nav>
+        </div>
+
+    </div>
+    <header class="header-container" role="banner">
+        <!-- header-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container">
+            <figure class="logo">
+                <a href="https://www.smith.edu/libraries">
+                    <img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-logo.png" width="191" height="59" alt="Smith College Libraries" class="hidden-xs hidden-sm">
+                    <div class="visible-xs visible-sm mobile-logo">Smith College Libraries</div>
+                </a>
+            </figure>
+            <a href="#" class="mobile-nav-icon menu"><span class="sr-only">Menu</span></a>
+        </div>
+        <!-- header-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </header>
+
+    <div class="hours-module full-width">
+        <div class="collapse" id="hours-content">
+            <div class="well">
+                <div class="container">
+                    <div class="hours-wrapper">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <div class="hour-inner-left">
+                                    <h3>Todays Hours</h3>
+                                    <table>
+                                        <tr>
+                                            <td><strong>Nielson Library</strong></td>
+                                            <td>8:00am-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Hillyer Library</strong></td>
+                                            <td>9:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Josten Performing Arts Library</strong></td>
+                                            <td>10:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Young Science Library</strong></td>
+                                            <td>9:00am-4:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Mortimor Rare Book Room</strong></td>
+                                            <td>9:00am-12:00pm, 1:00pm-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>College Archives</strong></td>
+                                            <td>10:00am-5:00pm</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Sophia Smith Collection</strong></td>
+                                            <td>10:00am-5:00pm</td>
+                                        </tr>
+                                    </table>
+                                    <div class="full-link">
+                                        <a href="#">View all Hours</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-5">
+                                <div class="hour-inner-right">
+                                    <h3>Ask a Librarian</h3>
+                                    <div class="hours-content-box">
+                                        <h4>Neilson Library Reference Desk</h4>
+                                        <p>Mon.-Fri.: 10 am-5 pm</p>
+                                        <p class="telephone">Call (413) 585-2960</p>
+                                        <p class="email"><a href="mailto:test@test.com">Email Us</a></p>
+                                    </div>
+                                    <div class="hours-content-box">
+                                        <h4>Neilson Library Circulation Desk</h4>
+                                        <p>The Circulation Desk is open during all library hours.</p>
+                                        <p class="telephone">Call (413) 585-2960</p>
+                                        <p class="email"><a href="mailto:test@test.com">Email Us</a></p>
+                                    </div>
+                                    <div class="full-link">
+                                        <a href="#">Staff Directory</a>
+                                    </div>
+                                    <div class="full-link">
+                                        <a href="#" class="green">More ways to connect</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" class="close-menu"><span class="icon">X</span></a>
+                </div>
+            </div>
+        </div>
+        <div class="button-wrapper">
+            <div class="container">
+                <button aria-expanded="false" aria-controls="hours-content" class="hours-button collapsed"  type="button" data-toggle="collapse" data-target="#hours-content">
+                    Hours & Contact
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="tier-container" id="main" role="main">
+        <!-- home-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <section class="content tier-content" id="skipToContent" role="region">
+            <!-- home-content starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+
+            <!-- MAIN CONTENT AREA -->
+            <div class="container">
+              <div class="row">
+                
 <div id="wrap">
-  <#INCLUDE filename="include_header.html">
-  <div id="content-wrap">
-  	<#INCLUDE filename="include_menu.html">
-    <div id="content">
-		<form action="illiad.dll" method="post" name="NewAuthRegistration" class="f-wrap-request">
-			<input type="hidden" name="ILLiadForm" value="NewAuthRegistration">
-            <#FORMSTATE>
-				<div class="req"><b>*</b> Indicates required field</div>
-				<fieldset>			
-					<h3>Change Personal Information</h3>						
-					<label for="FirstName">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORFirstName">"><b>First Name</b></span>
-						</span>
-						<input id="FirstName" name="FirstName" type="text" size="40" class="f-name" value="<#PARAM name="FirstName">"><br />	
-					</label>		
-						
-					<label for="LastName">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORLastName">"><b>Last Name</b></span>
-						</span>
-						<input id="LastName" name="LastName" type="text" size="40" class="f-name" value="<#PARAM name="LastName">"><br />						
-					</label>
-					
-					<label for="SSN">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORSSN">"><b>ID Number</b></span>
-						</span>
-						<input id="SSN" name="SSN" type="text" size="40" class="f-name" value="<#PARAM name="SSN">"><br />						
-					</label>
-					
-					<label for="EMailAddress">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERROREMailAddress">"><b>E-Mail Address</b></span>
-						</span>
-						<input id="EMailAddress" name="EMailAddress" type="text" size="40" class="f-name" value="<#PARAM name="EMailAddress">"><br />						
-					</label>
-					
-					<label for="Phone">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORPhone">"><b>Daytime Phone</b></span>
-						</span>
-						<input id="Phone" name="Phone" type="text" size="40" class="f-name" value="<#PARAM name="Phone">"><br />						
-					</label>
-					
-                    <label for="MobilePhone">
-                        <span class="field">
-                            <span class="<#ERROR name=" errormobilephone">"><b>Mobile Phone</b></span>
-                        </span>
-                        <input id="MobilePhone" name="MobilePhone" type="text" size="40" class="f-name" value="<#PARAM name="MobilePhone">"><br />
-                    </label>
-
-                    <label for="WebDeliveryGroup">
-						<span class="field">
-							<span class="<#ERROR name="ERRORWebDeliveryGroup">"><b>Preferred Electronic Delivery if Possible (PDF file via web)</b></span>
-						</span>
-						<select id="WebDeliveryGroup" name="WebDeliveryGroup" size="1" class="f-name">
-							<option selected><#PARAM name="WebDeliveryGroup"></option>
-							<option>Yes</option>
-                			<option>No</option>
-						</select><br />
-					</label>
-					
-					<label for="Address">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORAddress">"><b>Primary Address Line 1</b></span>
-						</span>
-						<input id="Address" name="Address" type="text" size="40" class="f-name" value="<#PARAM name="Address">"><br />						
-					</label>
-					
-					<label for="Address2">
-						<span class="field">
-							<span class="<#ERROR name="ERRORAddress2">"><b>Primary Address Line 2</b></span>
-						</span>
-						<input id="Address2" name="Address2" type="text" size="40" class="f-name" value="<#PARAM name="Address2">"><br />
-					</label>
-					
-					<label for="City">
-						<span class="field">
-							<span class="req">*</span>							
-							<span class="<#ERROR name="ERRORCity">"><b>Primary Address City</b></span>
-						</span>
-						<input id="City" name="City" type="text" size="40" class="f-name" value="<#PARAM name="City">"><br />
-					</label>
-					
-					<label for="State">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORState">"><b>Primary Address State</b></span>
-						</span>
-						<select id="State" name="State" size="1" class="f-name">
-							<#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=State>" defaultValue="" defaultName="" />
-						</select><br />
-					</label>
-					
-					<label for="Zip">
-						<span class="field">
-							<span class="req">*</span>						
-							<span class="<#ERROR name="ERRORZip">"><b>Primary Address Zip</b></span>
-						</span>
-						<input id="Zip" name="Zip" type="text" size="40" class="f-name" value="<#PARAM name="Zip">"><br />
-					</label>
-					
-					<label for="SAddress">
-						<span class="field">
-							<span class="<#ERROR name="ERRORSAddress">"><b>Secondary Address Line 1</b></span>
-						</span>
-						<input id="SAddress" name="SAddress" type="text" size="40" class="f-name" value="<#PARAM name="SAddress">"><br />						
-					</label>
-					
-					<label for="SAddress2">
-						<span class="field">
-							<span class="<#ERROR name="ERRORSAddress2">"><b>Secondary Address Line 2</b></span>
-						</span>
-						<input id="SAddress2" name="SAddress2" type="text" size="40" class="f-name" value="<#PARAM name="SAddress2">"><br />
-					</label>
-					
-					<label for="SCity">
-						<span class="field">
-							<span class="<#ERROR name="ERRORSCity">"><b>Secondary Address City</b></span>
-						</span>
-						<input id="SCity" name="SCity" type="text" size="40" class="f-name" value="<#PARAM name="SCity">"><br />
-					</label>
-					
-					<label for="SState">
-						<span class="field">
-							<span class="<#ERROR name="ERRORSState">"><b>Secondary Address State</b></span>
-						</span>
-						<select id="SState" name="SState" size="1" class="f-name">
-							<#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=SState>" defaultValue="" defaultName="" />
-						</select><br />
-					</label>
-					
-					<label for="SZip">
-						<span class="field">
-							<span class="<#ERROR name="ERRORSZip">"><b>Secondary Address Zip</b></span>
-						</span>
-						<input id="SZip" name="SZip" type="text" size="40" class="f-name" value="<#PARAM name="SZip">"><br />
-					</label>
-					
-					<label for="StatusGroup">
-						<span class="field">
-							<span class="req">*</span>
-							<span class="<#ERROR name="ERRORStatus">"><b>Status</b></span>
-						</span>
-						<select id="StatusGroup" name="StatusGroup" size="1" class="f-name">
-							<#OPTION name="custom" groupname="StatusGroup" selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
-						</select><br />
-					</label>
-					
-					<label for="Department">
-						<span class="field">
-                            <span class="req">*</span>
-							<span class="<#ERROR name="ERRORDepartment">"><b>Department</b></span>
-						</span>
-						<select id="Department" name="Department" size="1" class="f-name">
-							<#OPTION name="custom" groupname="Department" selectedValue="<#PARAM name=Department>"  defaultValue="" defaultName=""/>
-						</select><br />
-					</label>
-					
-					<label for="AuthorizedUsers">
-						<span class="field">
-							<span class="<#ERROR name="ERRORAuthorizedUsers">"><b>Authorized Users</b></span><br />
-							<span class="note">List the full names of anyone you wish to be allowed to pick up your ILL items.<br />An ID will be REQUIRED to pick items up.</span>
-						</span>
-						<textarea id="AuthorizedUsers" name="AuthorizedUsers" rows="2" cols="40" class="f-name"><#PARAM name="AuthorizedUsers"></textarea><br />
-					</label>
-					
-					<label for="NVTGC">
-						<span class="field">
-							<span class="<#ERROR name="ERRORNVTGC">"><b>Delivery Location</b></span>
-						</span>
-						<select id="NVTGC" name="NVTGC" size="1" class="f-name">
-							<#OPTION name="custom" groupname="NVTGC" selectedValue="<#PARAM name=NVTGC>"  defaultValue="" defaultName=""/>
-						</select><br />
-					</label>
-
-                    <label for="DeliveryGroup">
-						<span class="field">
-							<span class="<#ERROR name="ERRORDeliveryGroup">"><b>Preferred Article Delivery Method</b></span>
-						</span>
-						<select id="DeliveryGroup" name="DeliveryGroup" size="1" class="f-name">
-							<option selected><#PARAM name="DeliveryGroup"></option>
-							<option>Hold for Pickup</option>
-                			<option>Mail to Address</option>
-						</select><br />
-					</label>
-
-					<label for="LoanDeliveryGroup">
-						<span class="field">
-							<span class="<#ERROR name="ERRORLoanDeliveryGroup">"><b>Preferred Loan Delivery Method</b></span>
-						</span>
-						<select id="DeliveryGroup" name="LoanDeliveryGroup" size="1" class="f-name">
-							<option selected><#PARAM name="LoanDeliveryGroup"></option>
-							<option>Hold for Pickup</option>
-                			<option>Mail to Address</option>
-						</select><br />
-					</label>
-					
-					<#include filename="include_notification_preferences.html"><br />
-                    
-                    <div class="f-submit-wrap" align="right">
-						<input type="submit" name="SubmitButton" value="Submit Information" class="f-submit" />
-						<input type="submit" name="SubmitButton" value="Cancel - Exit to Main Menu" class="f-submit" />
-					</div>
-				</fieldset>
-				<input type="hidden" id="BillingCategory" name="BillingCategory" value="<#PARAM name="BillingCategory">">
-		</form>		
-      	<#INCLUDE filename="include_footer.html">
-    </div>    
+    <#INCLUDE filename="include_header.html">
+    <h1>New Authenticated User Registration</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ <form action="illiad.dll" class="f-wrap-request" method="post" name="NewAuthRegistration">
+  <input name="ILLiadForm" type="hidden" value="NewAuthRegistration"/>
+  <#FORMSTATE>
+  <div class="req">
+   <b>
+    *
+   </b>
+   Indicates required field
   </div>
+  <fieldset>
+   <h3>
+    Change Personal Information
+   </h3>
+   <label for="FirstName">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorfirstname"="">
+      ">
+      <b>
+       First Name
+      </b>
+     </span>
+    </span>
+    <input class="f-name" firstname"="" id="FirstName" name="FirstName" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="LastName">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorlastname"="">
+      ">
+      <b>
+       Last Name
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="LastName" lastname"="" name="LastName" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="SSN">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorssn"="">
+      ">
+      <b>
+       ID Number
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SSN" name="SSN" size="40" ssn"="" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="EMailAddress">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" erroremailaddress"="">
+      ">
+      <b>
+       E-Mail Address
+      </b>
+     </span>
+    </span>
+    <input class="f-name" emailaddress"="" id="EMailAddress" name="EMailAddress" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="Phone">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorphone"="">
+      ">
+      <b>
+       Daytime Phone
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Phone" name="Phone" phone"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="MobilePhone">
+    <span class="field">
+     <span class="<#ERROR name=" errormobilephone"="">
+      ">
+      <b>
+       Mobile Phone
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="MobilePhone" mobilephone"="" name="MobilePhone" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="WebDeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name=" errorwebdeliverygroup"="">
+      ">
+      <b>
+       Preferred Electronic Delivery if Possible (PDF file via web)
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="WebDeliveryGroup" name="WebDeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name="WebDeliveryGroup">
+     </option>
+     <option>
+      Yes
+     </option>
+     <option>
+      No
+     </option>
+    </select>
+    <br/>
+   </label>
+   <label for="Address">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" erroraddress"="">
+      ">
+      <b>
+       Primary Address Line 1
+      </b>
+     </span>
+    </span>
+    <input address"="" class="f-name" id="Address" name="Address" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="Address2">
+    <span class="field">
+     <span class="<#ERROR name=" erroraddress2"="">
+      ">
+      <b>
+       Primary Address Line 2
+      </b>
+     </span>
+    </span>
+    <input address2"="" class="f-name" id="Address2" name="Address2" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="City">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorcity"="">
+      ">
+      <b>
+       Primary Address City
+      </b>
+     </span>
+    </span>
+    <input city"="" class="f-name" id="City" name="City" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="State">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorstate"="">
+      ">
+      <b>
+       Primary Address State
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="State" name="State" size="1">
+     <#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=State>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="Zip">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorzip"="">
+      ">
+      <b>
+       Primary Address Zip
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Zip" name="Zip" size="40" type="text" value="<#PARAM name=" zip"=""/>
+    ">
+    <br/>
+   </label>
+   <label for="SAddress">
+    <span class="field">
+     <span class="<#ERROR name=" errorsaddress"="">
+      ">
+      <b>
+       Secondary Address Line 1
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SAddress" name="SAddress" saddress"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="SAddress2">
+    <span class="field">
+     <span class="<#ERROR name=" errorsaddress2"="">
+      ">
+      <b>
+       Secondary Address Line 2
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SAddress2" name="SAddress2" saddress2"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="SCity">
+    <span class="field">
+     <span class="<#ERROR name=" errorscity"="">
+      ">
+      <b>
+       Secondary Address City
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SCity" name="SCity" scity"="" size="40" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="SState">
+    <span class="field">
+     <span class="<#ERROR name=" errorsstate"="">
+      ">
+      <b>
+       Secondary Address State
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="SState" name="SState" size="1">
+     <#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=SState>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="SZip">
+    <span class="field">
+     <span class="<#ERROR name=" errorszip"="">
+      ">
+      <b>
+       Secondary Address Zip
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SZip" name="SZip" size="40" szip"="" type="text" value="<#PARAM name="/>
+    ">
+    <br/>
+   </label>
+   <label for="StatusGroup">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errorstatus"="">
+      ">
+      <b>
+       Status
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="StatusGroup" name="StatusGroup" size="1">
+     <#OPTION name="custom" groupname="StatusGroup" selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="Department">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name=" errordepartment"="">
+      ">
+      <b>
+       Department
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="Department" name="Department" size="1">
+     <#OPTION name="custom" groupname="Department" selectedValue="<#PARAM name=Department>"  defaultValue="" defaultName=""/>
+    </select>
+    <br/>
+   </label>
+   <label for="AuthorizedUsers">
+    <span class="field">
+     <span class="<#ERROR name=" errorauthorizedusers"="">
+      ">
+      <b>
+       Authorized Users
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      List the full names of anyone you wish to be allowed to pick up your ILL items.
+      <br/>
+      An ID will be REQUIRED to pick items up.
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name="AuthorizedUsers"></textarea>
+    <br/>
+   </label>
+   <label for="NVTGC">
+    <span class="field">
+     <span class="<#ERROR name=" errornvtgc"="">
+      ">
+      <b>
+       Delivery Location
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="NVTGC" name="NVTGC" size="1">
+     <#OPTION name="custom" groupname="NVTGC" selectedValue="<#PARAM name=NVTGC>"  defaultValue="" defaultName=""/>
+    </select>
+    <br/>
+   </label>
+   <label for="DeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name=" errordeliverygroup"="">
+      ">
+      <b>
+       Preferred Article Delivery Method
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="DeliveryGroup" name="DeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name="DeliveryGroup">
+     </option>
+     <option>
+      Hold for Pickup
+     </option>
+     <option>
+      Mail to Address
+     </option>
+    </select>
+    <br/>
+   </label>
+   <label for="LoanDeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name=" errorloandeliverygroup"="">
+      ">
+      <b>
+       Preferred Loan Delivery Method
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="DeliveryGroup" name="LoanDeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name="LoanDeliveryGroup">
+     </option>
+     <option>
+      Hold for Pickup
+     </option>
+     <option>
+      Mail to Address
+     </option>
+    </select>
+    <br/>
+   </label>
+   <#include filename="include_notification_preferences.html">
+   <br/>
+   <div align="right" class="f-submit-wrap">
+    <input class="f-submit" name="SubmitButton" type="submit" value="Submit Information"/>
+    <input class="f-submit" name="SubmitButton" type="submit" value="Cancel - Exit to Main Menu"/>
+   </div>
+  </fieldset>
+  <input billingcategory"="" id="BillingCategory" name="BillingCategory" type="hidden" value="<#PARAM name="/>
+  ">
+ </form>
+ <#INCLUDE filename="include_footer.html">
 </div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+
+              </div>
+            </div>
+            <!-- / MAIN CONTENT AREA -->
+
+            <!-- home-content ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        </section>
+
+        <!-- home-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </div>
+
+    <footer class="footer-container" role="contentinfo">
+        <!-- footer-container starts ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6"><img class="img-responsive" src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-footer-logo-2x.png" width="411" height="25" alt=""></div>
+                <div class="col-sm-6 hidden-xs"><h3>Content. Connection. Community.</h3> </div>
+                <div class="col-xs-12">
+                    <div class="input-group">
+                        <label class="sr-only" for="global-search-footer">Search</label>
+                        <input id="global-search-footer" type="text" class="form-control" placeholder="Explore the Librarie's Site">
+                        <a href="#" class="input-group-addon btn" title="Search"> Search</a>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-8">
+                    <div class="footer-links">
+                        <div class="row">
+                            <div class="col-xs-6 col-md-4">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <ul class="green-links">
+                                            <li><a href="#">Smith.edu</a></li>
+                                            <li><a href="#">Smith Email</a></li>
+                                            <li><a href="#">Smith Portal</a></li>
+                                            <li><a href="#">Smith Moodle</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 col-md-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Hours & Locations</a></li>
+                                            <li><a href="#">My Account/Renew</a></li>
+                                            <li><a href="#">Ask a Librarian</a></li>
+                                            <li><a href="#">Staff Directory</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <ul>
+                                            <li><a href="#">Interlibrary Loan</a></li>
+                                            <li><a href="#">Reserve Study Space</a></li>
+                                            <li><a href="#">Borrowing & Access</a></li>
+                                            <li><a href="#">News & Events</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="footer-address">
+                                <p class="address">7 Neilson Drive</p>
+                                <p class="city">Northampton, Massachusetts, 01063</p>
+                                <p class="phone">Phone: 413-585-2910</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden-xs col-sm-4">
+                    <div class="campaign-callout">
+                        <a href="#">
+                            <div class="content">
+                                <figure>
+                                    <!--<img src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/images/library-home-footer-callout.jpg" alt="">-->
+                                </figure>
+
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="col-xs-12">
+                    <div class="social-footer">
+                        <ul>
+                            <li class="facebook"><a href="#"><span class="sr-only">Facebook</span><i class="fa fa-facebook">&nbsp;</i></a></li>
+                            <li class="twitter"><a href="#"><span class="sr-only">Twitter</span><i class="fa fa-twitter">&nbsp;</i></a></li>
+                            <li class="instagram"><a href="#"><span class="sr-only">Instagram</span><i class="fa fa-instagram">&nbsp;</i></a></li>
+                            <li class="youtube"><a href="#"><span class="sr-only">Youtube</span><i class="fa fa-youtube">&nbsp;</i></a></li>
+                            <li class="pinterest"><a href="#"><span class="sr-only">Pinterest</span><i class="fa fa-pinterest">&nbsp;</i></a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <ul class="copyright">
+                        <li>&copy; Smith College</li>
+                        <li><a href="#">Legal/Privacy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                        <li><a href="#">Title IX</a></li>
+                        <li><a href="#">Consumer Information</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- footer-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+    </footer>
+
+    <!-- main-container ends   ||||||||||||||||||||||||||||||||||||||||||||||||||| -->
+</div>
+<div id="modalOverlay" tabindex="-1"></div>
+<script data-main="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/main" src="https://www.smith.edu/libraries/sites/libraries/themes/smith_library/ui/scripts/vendor/require/require.js"></script>
+
 </body>
 </html>

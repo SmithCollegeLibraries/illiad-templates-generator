@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
@@ -6,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Interlibrary Loan - Interlibrary Loan, Smith College Libraries</title>
+    <title>ILLiad Main Menu - Interlibrary Loan, Smith College Libraries</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -168,17 +169,19 @@
                 
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>Interlibrary Loan</h1>
+    <h1>ILLiad Main Menu</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
-            <div class="default-table" id="table-main-outstanding-requests">
-                <#TABLE name="ViewOutstandingRequests" headerText="Outstanding Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" column="TransactionNumber:Transaction" column="DocumentType:Type" column="Title" column="Author" column="TransactionStatus:Status">
-            </div>
-            <a href="<#ACTION action="2" type="40" value="RSSID" valueType="lookup" absolutePath="false" includeSessionID="false">">Subscribe to Alerts Feed</a>
-            <br />
-            <#ALERTS>
-            <#INCLUDE filename="include_footer.html">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ <div class="default-table" id="table-main-outstanding-requests">
+  <#TABLE name="ViewOutstandingRequests" headerText="Outstanding Requests" noDataAction="ShowMessageRow" noDataMessage="No Requests" column="TransactionNumber:Transaction" column="DocumentType:Type" column="Title" column="Author" column="TransactionStatus:Status">
+ </div>
+ <#INCLUDE filename="include_footer.html">
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
         </div>
     </div>
 
