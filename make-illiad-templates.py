@@ -4,7 +4,7 @@ import glob, os
 import logging
 logging.basicConfig(level=logging.INFO)
 
-inputPath = 'autojinjafied-illiad-templates'
+inputPath = 'jinjafied-illiad-templates'
 outputPath = 'rendered-illiad-templates'
 
 # In this case, we will load templates off the filesystem.
