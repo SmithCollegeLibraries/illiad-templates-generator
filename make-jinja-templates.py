@@ -2,6 +2,7 @@ from bs4 import BeautifulSoup
 import glob, os
 import logging
 from string import Template
+import re
 
 logging.basicConfig(level=logging.INFO)
 
@@ -34,14 +35,15 @@ bottom = """
 for inputFileName in glob.glob(inputPath + '/' + "*.html"):
     logging.info('Processing %s' % inputFileName)
     with open(inputFileName) as fp:
-        soup = BeautifulSoup(fp, "html5lib")
+        template = fp.read()
+        template = re.sub("name\=\"(.*?)\"", r"""name='\1'""", template, flags=re.DOTALL)
+        soup = BeautifulSoup(template, "html5lib")
         contents = soup.select("div#content")
         try:
             content = contents[0]
         except IndexError:
             logging.warning('Could not parse %s' % inputFileName)
             continue
-
         # Set title
         title = soup.find('title').string
         title = title.replace("ILLiad - ","") 

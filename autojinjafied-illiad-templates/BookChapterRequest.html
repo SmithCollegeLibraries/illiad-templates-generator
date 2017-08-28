@@ -13,10 +13,8 @@
 <div>
  <form action="illiad.dll" class="f-wrap-request" method="post" name="BookChapterRequest">
   <input name="ILLiadForm" type="hidden" value="BookChapterRequest"/>
-  <input name="Username" type="hidden" username"="" value="<#PARAM name="/>
-  ">
-  <input name="SessionID" sessionid"="" type="hidden" value="<#PARAM name="/>
-  ">
+  <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
+  <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
   <div class="req">
    <b>
     *
@@ -36,8 +34,7 @@
      <span class="req">
       *
      </span>
-     <span class="<#ERROR name=" errorphotojournaltitle"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoJournalTitle'>">
       <b>
        Book Title
       </b>
@@ -47,91 +44,78 @@
       Please do not abbreviate unless your citation is abbreviated
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="PhotoJournalTitle" name="PhotoJournalTitle" rows="2"><#PARAM name="PhotoJournalTitle"></textarea>
+    <textarea class="f-name" cols="40" id="PhotoJournalTitle" name="PhotoJournalTitle" rows="2"><#PARAM name='PhotoJournalTitle'></textarea>
     <br/>
    </label>
    <label for="PhotoItemAuthor">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoitemauthor"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoItemAuthor'>">
       <b>
        Book Author/Editor
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoItemAuthor" name="PhotoItemAuthor" photoitemauthor"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoItemAuthor" name="PhotoItemAuthor" size="40" type="text" value="<#PARAM name='PhotoItemAuthor'>"/>
     <br/>
    </label>
    <label for="PhotoItemPlace">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoitemplace"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoItemPlace'>">
       <b>
        Place of Publication
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoItemPlace" name="PhotoItemPlace" photoitemplace"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoItemPlace" name="PhotoItemPlace" size="40" type="text" value="<#PARAM name='PhotoItemPlace'>"/>
     <br/>
    </label>
    <label for="PhotoItemPublisher">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoitempublisher"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoItemPublisher'>">
       <b>
        Publisher
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoItemPublisher" name="PhotoItemPublisher" photoitempublisher"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoItemPublisher" name="PhotoItemPublisher" size="40" type="text" value="<#PARAM name='PhotoItemPublisher'>"/>
     <br/>
    </label>
    <label for="PhotoJournalYear">
     <span class="field">
-     <span class="<#ERROR name=" errorphotojournalyear"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoJournalYear'>">
       <b>
        Year
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" photojournalyear"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" size="40" type="text" value="<#PARAM name='PhotoJournalYear'>"/>
     <br/>
    </label>
    <label for="PhotoItemEdition">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoitemedition"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoItemEdition'>">
       <b>
        Edition
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoItemEdition" name="PhotoItemEdition" photoitemedition"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoItemEdition" name="PhotoItemEdition" size="40" type="text" value="<#PARAM name='PhotoItemEdition'>"/>
     <br/>
    </label>
    <label for="PhotoJournalInclusivePages">
     <span class="field">
-     <span class="<#ERROR name=" errorphotojournalinclusivepages"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoJournalInclusivePages'>">
       <b>
        Inclusive Pages
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoJournalInclusivePages" name="PhotoJournalInclusivePages" photojournalinclusivepages"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoJournalInclusivePages" name="PhotoJournalInclusivePages" size="40" type="text" value="<#PARAM name='PhotoJournalInclusivePages'>"/>
     <br/>
    </label>
    <label for="ISSN">
     <span class="field">
-     <span class="<#ERROR name=" errorissn"="">
-      ">
+     <span class="<#ERROR name='ERRORISSN'>">
       <b>
        ISSN/ISBN (International Standard Serial/Book Number)
       </b>
@@ -141,59 +125,51 @@
       If given will speed request processing
      </span>
     </span>
-    <input class="f-name" id="ISSN" issn"="" name="ISSN" size="20" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="ISSN" name="ISSN" size="20" type="text" value="<#PARAM name='ISSN'>"/>
     <br/>
    </label>
    <label for="CallNumber">
     <span class="field">
-     <span class="<#ERROR name=" errorcallnumber"="">
-      ">
+     <span class="<#ERROR name='ERRORCallNumber'>">
       <b>
        Call Number
       </b>
      </span>
     </span>
-    <input callnumber"="" class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name='CallNumber'>"/>
     <br/>
    </label>
    <label for="ESPNumber">
     <span class="field">
-     <span class="<#ERROR name=" errorespnumber"="">
-      ">
+     <span class="<#ERROR name='ERRORESPNumber'>">
       <b>
        OCLC or Docline UI Number
       </b>
      </span>
     </span>
-    <input class="f-name" espnumber"="" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
     <br/>
    </label>
    <label for="PhotoArticleAuthor">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoarticleauthor"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoArticleAuthor'>">
       <b>
        Chapter Author
       </b>
      </span>
     </span>
-    <input class="f-name" id="PhotoArticleAuthor" name="PhotoArticleAuthor" photoarticleauthor"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="PhotoArticleAuthor" name="PhotoArticleAuthor" size="40" type="text" value="<#PARAM name='PhotoArticleAuthor'>"/>
     <br/>
    </label>
    <label for="PhotoArticleTitle">
     <span class="field">
-     <span class="<#ERROR name=" errorphotoarticletitle"="">
-      ">
+     <span class="<#ERROR name='ERRORPhotoArticleTitle'>">
       <b>
        Chapter Title
       </b>
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="PhotoArticleTitle" name="PhotoArticleTitle" rows="2"><#PARAM name="PhotoArticleTitle"></textarea>
+    <textarea class="f-name" cols="40" id="PhotoArticleTitle" name="PhotoArticleTitle" rows="2"><#PARAM name='PhotoArticleTitle'></textarea>
     <br/>
    </label>
    <label for="NotWantedAfter">
@@ -201,8 +177,7 @@
      <span class="req">
       *
      </span>
-     <span class="<#ERROR name=" errornotwantedafter"="">
-      ">
+     <span class="<#ERROR name='ERRORNotWantedAfter'>">
       <b>
        Not Wanted After Date
       </b>
@@ -212,14 +187,12 @@
       (MM/DD/YYYY)
      </span>
     </span>
-    <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" notwantedafter"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" size="40" type="text" value="<#PARAM name='NotWantedAfter'>"/>
     <br/>
    </label>
    <label for="AcceptNonEnglish">
     <span class="field">
-     <span class="<#ERROR name=" erroracceptnonenglish"="">
-      ">
+     <span class="<#ERROR name='ERRORAcceptNonEnglish'>">
       <b>
        Will you accept the item in a language other than English?
       </b>
@@ -231,7 +204,7 @@
     </span>
     <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
      <option selected="">
-      <#PARAM name="AcceptNonEnglish">
+      <#PARAM name='AcceptNonEnglish'>
      </option>
      <option>
       No
@@ -244,22 +217,20 @@
    </label>
    <label for="AccountNo">
     <span class="field">
-     <span class="<#ERROR name=" erroraccountno"="">
-      ">
+     <span class="<#ERROR name='ERRORAccountNo'>">
       <b>
        Account Number
       </b>
      </span>
     </span>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name="ValidAccounts">
+     <#OPTION name='ValidAccounts'>
     </select>
     <br/>
    </label>
    <label for="Notes">
     <span class="field">
-     <span class="<#ERROR name=" errornotes"="">
-      ">
+     <span class="<#ERROR name='ERRORNotes'>">
       <b>
        Notes
       </b>
@@ -269,14 +240,14 @@
       Put any information here that may help us find the item, as well as any other pertinent information.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
     <br/>
    </label>
-   <#INCLUDE filename="include_request_cited.html">                
-                    <#INCLUDE filename="include_request_buttons.html">
+   <#INCLUDE filename='include_request_cited.html'>                
+                    <#INCLUDE filename='include_request_buttons.html'>
   </fieldset>
  </form>
- <#INCLUDE filename="include_footer.html">
+ <#INCLUDE filename='include_footer.html'>
 </div>
 
           <!-- / MAIN CONTENT AREA -->

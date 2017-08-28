@@ -177,10 +177,8 @@
 <div>
  <form action="illiad.dll" class="f-wrap-request" method="post" name="NLMDDSRequest">
   <input name="ILLiadForm" type="hidden" value="NLMDDSRequest"/>
-  <input name="Username" type="hidden" username"="" value="<#PARAM name="/>
-  ">
-  <input name="SessionID" sessionid"="" type="hidden" value="<#PARAM name="/>
-  ">
+  <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
+  <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
   <fieldset>
    <h3>
     NLM Document Delivery Service Requests
@@ -192,22 +190,20 @@
    Note: The account number and notes will be used for all of the submitted requests unless indivudally overriden below.
    <label for="AccountNo">
     <span class="field">
-     <span class="<#ERROR name=" erroraccountno"="">
-      ">
+     <span class="<#ERROR name='ERRORAccountNo'>">
       <b>
        Account Number
       </b>
      </span>
     </span>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name="ValidAccounts">
+     <#OPTION name='ValidAccounts'>
     </select>
     <br/>
    </label>
    <label for="Notes">
     <span class="field">
-     <span class="<#ERROR name=" errornotes"="">
-      ">
+     <span class="<#ERROR name='ERRORNotes'>">
       <b>
        Notes
       </b>
@@ -217,18 +213,18 @@
       Put any information here that may help us find these items, as well as any other pertinent information.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
     <br/>
    </label>
    <h2>
     Requests
    </h2>
-   <#PARAM name="NLMDDSRequests">
+   <#PARAM name='NLMDDSRequests'>
 					               
-                    <#INCLUDE filename="include_request_buttons.html">
+                    <#INCLUDE filename='include_request_buttons.html'>
   </fieldset>
  </form>
- <#INCLUDE filename="include_footer.html">
+ <#INCLUDE filename='include_footer.html'>
 </div>
 
           <!-- / MAIN CONTENT AREA -->

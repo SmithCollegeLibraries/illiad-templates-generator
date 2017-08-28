@@ -1,6 +1,6 @@
 
 {% extends "layouts/layout.html" %}
-{% block title %}Transaction <#PARAM name="TransactionNumber">{% endblock %}
+{% block title %}Transaction <#PARAM name='TransactionNumber'>{% endblock %}
 
 {% block content %}
 <div id="wrap">
@@ -11,21 +11,21 @@
         <div class="col-sm-10">
           <!-- MAIN CONTENT AREA -->
 <div>
- <#MENU name="transaction" separator="|">
+ <#MENU name='transaction' separator="|">
  <div class="default-table">
-  <#TABLE name="DetailedInformation" headerText="Transaction Information" hideColumnHeaders="true">
+  <#TABLE name='DetailedInformation' headerText="Transaction Information" hideColumnHeaders="true">
   <br/>
  </div>
  <div class="default-table">
-  <#TABLE name="NotesInformation" headerText="Notes" noDataAction="ShowMessageRow" noDataMessage="No Notes" column="NoteDate:Date/Time" column="AddedBy:Added By" column="Note">
+  <#TABLE name='NotesInformation' headerText="Notes" noDataAction="ShowMessageRow" noDataMessage="No Notes" column="NoteDate:Date/Time" column="AddedBy:Added By" column="Note">
   <br/>
  </div>
  <div class="default-table">
-  <#TABLE name="TrackingInformation" headerText="Tracking" noDataAction="ShowMessageRow" noDataMessage="No Tracking" 
+  <#TABLE name='TrackingInformation' headerText="Tracking" noDataAction="ShowMessageRow" noDataMessage="No Tracking" 
              column="DateTime:Date/Time" column="ChangedTo:Status" column="ChangedBy:Changed By">
   <br/>
  </div>
- <#INCLUDE filename="include_footer.html">
+ <#INCLUDE filename='include_footer.html'>
 </div>
 
           <!-- / MAIN CONTENT AREA -->

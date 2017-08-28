@@ -178,12 +178,9 @@
  <form action="illiad.dll" class="f-wrap-request" method="post" name="EditThesisRequest">
   <input name="ILLiadForm" type="hidden" value="EditThesisRequest"/>
   <input name="RequestType" type="hidden" value="Loan"/>
-  <input name="Username" type="hidden" username"="" value="<#PARAM name="/>
-  ">
-  <input name="SessionID" sessionid"="" type="hidden" value="<#PARAM name="/>
-  ">
-  <input name="TransactionNumber" transactionnumber"="" type="hidden" value="<#PARAM name="/>
-  ">
+  <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
+  <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
+  <input name="TransactionNumber" type="hidden" value="<#PARAM name='TransactionNumber'>"/>
   <div class="req">
    <b>
     *
@@ -203,8 +200,7 @@
      <span class="req">
       *
      </span>
-     <span class="<#ERROR name=" errorloantitle"="">
-      ">
+     <span class="<#ERROR name='ERRORLoanTitle'>">
       <b>
        Title
       </b>
@@ -214,85 +210,73 @@
       Please do not abbreviate unless your citation is abbreviated
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name="LoanTitle"></textarea>
+    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name='LoanTitle'></textarea>
     <br/>
    </label>
    <label for="LoanAuthor">
     <span class="field">
-     <span class="<#ERROR name=" errorloanauthor"="">
-      ">
+     <span class="<#ERROR name='ERRORLoanAuthor'>">
       <b>
        Author
       </b>
      </span>
     </span>
-    <input class="f-name" id="LoanAuthor" loanauthor"="" name="LoanAuthor" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="LoanAuthor" name="LoanAuthor" size="40" type="text" value="<#PARAM name='LoanAuthor'>"/>
     <br/>
    </label>
    <label for="LoanPublisher">
     <span class="field">
-     <span class="<#ERROR name=" errorloanpublisher"="">
-      ">
+     <span class="<#ERROR name='ERRORLoanPublisher'>">
       <b>
        School
       </b>
      </span>
     </span>
-    <input class="f-name" id="LoanPublisher" loanpublisher"="" name="LoanPublisher" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="LoanPublisher" name="LoanPublisher" size="40" type="text" value="<#PARAM name='LoanPublisher'>"/>
     <br/>
    </label>
    <label for="LoanDate">
     <span class="field">
-     <span class="<#ERROR name=" errorloandate"="">
-      ">
+     <span class="<#ERROR name='ERRORLoanDate'>">
       <b>
        Year
       </b>
      </span>
     </span>
-    <input class="f-name" id="LoanDate" loandate"="" name="LoanDate" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="LoanDate" name="LoanDate" size="40" type="text" value="<#PARAM name='LoanDate'>"/>
     <br/>
    </label>
    <label for="LoanEdition">
     <span class="field">
-     <span class="<#ERROR name=" errorloanedition"="">
-      ">
+     <span class="<#ERROR name='ERRORLoanEdition'>">
       <b>
        Degree
       </b>
      </span>
     </span>
-    <input class="f-name" id="LoanEdition" loanedition"="" name="LoanEdition" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="LoanEdition" name="LoanEdition" size="40" type="text" value="<#PARAM name='LoanEdition'>"/>
     <br/>
    </label>
    <label for="CallNumber">
     <span class="field">
-     <span class="<#ERROR name=" errorcallnumber"="">
-      ">
+     <span class="<#ERROR name='ERRORCallNumber'>">
       <b>
        Call Number
       </b>
      </span>
     </span>
-    <input callnumber"="" class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name='CallNumber'>"/>
     <br/>
    </label>
    <label for="ESPNumber">
     <span class="field">
-     <span class="<#ERROR name=" errorespnumber"="">
-      ">
+     <span class="<#ERROR name='ERRORESPNumber'>">
       <b>
        OCLC or Docline UI Number
       </b>
      </span>
     </span>
-    <input class="f-name" espnumber"="" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
     <br/>
    </label>
    <label for="NotWantedAfter">
@@ -300,8 +284,7 @@
      <span class="req">
       *
      </span>
-     <span class="<#ERROR name=" errornotwantedafter"="">
-      ">
+     <span class="<#ERROR name='ERRORNotWantedAfter'>">
       <b>
        Not Wanted After Date
       </b>
@@ -311,14 +294,12 @@
       (MM/DD/YYYY)
      </span>
     </span>
-    <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" notwantedafter"="" size="40" type="text" value="<#PARAM name="/>
-    ">
+    <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" size="40" type="text" value="<#PARAM name='NotWantedAfter'>"/>
     <br/>
    </label>
    <label for="AcceptNonEnglish">
     <span class="field">
-     <span class="<#ERROR name=" erroracceptnonenglish"="">
-      ">
+     <span class="<#ERROR name='ERRORAcceptNonEnglish'>">
       <b>
        Will you accept the item in a language other than English?
       </b>
@@ -330,7 +311,7 @@
     </span>
     <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
      <option selected="">
-      <#PARAM name="AcceptNonEnglish">
+      <#PARAM name='AcceptNonEnglish'>
      </option>
      <option>
       No
@@ -343,22 +324,20 @@
    </label>
    <label for="AccountNo">
     <span class="field">
-     <span class="<#ERROR name=" erroraccountno"="">
-      ">
+     <span class="<#ERROR name='ERRORAccountNo'>">
       <b>
        Account Number
       </b>
      </span>
     </span>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name="ValidAccounts">
+     <#OPTION name='ValidAccounts'>
     </select>
     <br/>
    </label>
    <label for="Notes">
     <span class="field">
-     <span class="<#ERROR name=" errornotes"="">
-      ">
+     <span class="<#ERROR name='ERRORNotes'>">
       <b>
        Notes
       </b>
@@ -368,14 +347,14 @@
       Put any information here that may help us find the item, as well as any other pertinent information.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
     <br/>
    </label>
-   <#INCLUDE filename="include_request_cited.html">                
-                    <#INCLUDE filename="include_request_buttons.html">
+   <#INCLUDE filename='include_request_cited.html'>                
+                    <#INCLUDE filename='include_request_buttons.html'>
   </fieldset>
  </form>
- <#INCLUDE filename="include_footer.html">
+ <#INCLUDE filename='include_footer.html'>
 </div>
 
           <!-- / MAIN CONTENT AREA -->
