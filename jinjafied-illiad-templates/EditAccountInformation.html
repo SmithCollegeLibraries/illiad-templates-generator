@@ -1,0 +1,93 @@
+
+{% extends "layouts/layout.html" %}
+{% block title %}Edit Account Information{% endblock %}
+
+{% block content %}
+<div id="wrap">
+    <#INCLUDE filename="include_header.html">
+    <h1>{{ self.title() }}</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ <div class="default-table">
+  <#TABLE name='ShowCurrentAccounts' headerText="Current Accounts" noDataAction="ShowMessageRow" noDataMessage="No Accounts">
+  <br/>
+ </div>
+ <form action="illiad.dll" class="f-wrap-request" method="post" name="EditAccountForm">
+  <input name="ILLiadForm" type="hidden" value="EditAccountForm"/>
+  <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
+  <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
+  <#FORMSTATE>
+  <fieldset>
+   <h3>
+    Add Account
+   </h3>
+   <label for="AccountNo">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAccountNo'>">
+      <b>
+       Account Number
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="AccountNo" name="AccountNo" size="40" type="text" value="<#PARAM name='AccountNo'>"/>
+    <br/>
+   </label>
+   <label for="Type">
+    <span class="field">
+     <span class="<#ERROR name='ERRORType'>">
+      <b>
+       Account Type
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Type" name="Type" size="40" type="text" value="<#PARAM name='Type'>"/>
+    <br/>
+   </label>
+   <label for="Description">
+    <span class="field">
+     <span class="<#ERROR name='ERRORDescription'>">
+      <b>
+       Description
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Description" name="Description" size="40" type="text" value="<#PARAM name='Description'>"/>
+    <br/>
+   </label>
+   <label for="CCExpirationDate">
+    <span class="field">
+     <span class="<#ERROR name='ERRORCCExpirationDate'>">
+      <b>
+       Expiration Date
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="CCExpirationDate" name="CCExpirationDate" size="40" type="text" value="<#PARAM name='CCExpirationDate'>"/>
+    <br/>
+   </label>
+   <label for="CCNameonCard">
+    <span class="field">
+     <span class="<#ERROR name='ERRORCCNameonCard'>">
+      <b>
+       Name on Card
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="CCNameonCard" name="CCNameonCard" size="40" type="text" value="<#PARAM name='CCNameonCard'>"/>
+    <br/>
+   </label>
+   <div class="f-submit-wrap">
+    <input class="f-submit" name="SubmitButton" type="submit" value="Add Account"/>
+   </div>
+  </fieldset>
+ </form>
+ <#INCLUDE filename='include_footer.html'>
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+{% endblock %}

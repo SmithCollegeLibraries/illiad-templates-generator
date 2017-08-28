@@ -1,0 +1,29 @@
+
+{% extends "layouts/layout.html" %}
+{% block title %}ILLiad Logon{% endblock %}
+
+{% block content %}
+<div id="wrap">
+    <#INCLUDE filename="include_header.html">
+    <h1>{{ self.title() }}</h1>
+    <div id="content-wrap">
+        <#INCLUDE filename="include_menu.html">
+        <div class="col-sm-10">
+          <!-- MAIN CONTENT AREA -->
+<div>
+ Please contact the Interlibrary Loan office during normal business hours if you have any questions.
+ <div id="footer">
+  <p>
+   Copyright © 2011
+   <a href="http://www.atlas-sys.com">
+    Atlas Systems, Inc.
+   </a>
+   All Rights Reserved.
+  </p>
+ </div>
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+{% endblock %}
