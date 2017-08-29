@@ -1,6 +1,6 @@
 
 {% extends "layouts/layout.html" %}
-{% block title %}ILLiad Logon{% endblock %}
+{% block title %}Interlibrary Loan Logon{% endblock %}
 
 {% block content %}
 <div id="wrap">
@@ -16,7 +16,7 @@
   <div id="logonform">
    <fieldset>
     <h3>
-     Interlibrary Loan Logon
+     {{ self.title() }}
     </h3>
       <p>Enter your interlibrary loan username and password.> 
     <label for="username">
