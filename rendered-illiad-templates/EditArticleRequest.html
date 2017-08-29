@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Edit Photocopy Request - Interlibrary Loan, Smith College Libraries</title>
+    <title>Edit Article Request - Interlibrary Loan, Smith College Libraries</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -169,7 +169,7 @@
                 
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>Edit Photocopy Request</h1>
+    <h1>Edit Article Request</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
@@ -188,8 +188,9 @@
   </div>
   <fieldset>
    <h3>
-    Edit Photocopy Request
+    Edit Article Request
    </h3>
+      <p>Use this form to request a PDF of an article from a journal, magazine, newspaper, etc. not available online at Smith.</p>
    <#STATUS>
    <h2>
     Describe the item you want
@@ -201,107 +202,15 @@
      </span>
      <span class="<#ERROR name='ERRORPhotoJournalTitle'>">
       <b>
-       Title (Journal, Conference Proceedings, Anthology)
+       Publication Title (journal, magazine, newspaper, etc.)
       </b>
      </span>
      <br/>
      <span class="note">
-      Please do not abbreviate unless your citation is abbreviated
+      Please do not abbreviate
      </span>
     </span>
     <textarea class="f-name" cols="40" id="PhotoJournalTitle" name="PhotoJournalTitle" rows="2"><#PARAM name='PhotoJournalTitle'></textarea>
-    <br/>
-   </label>
-   <label for="PhotoJournalVolume">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoJournalVolume'>">
-      <b>
-       Volume
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoJournalVolume" name="PhotoJournalVolume" size="40" type="text" value="<#PARAM name='PhotoJournalVolume'>"/>
-    <br/>
-   </label>
-   <label for="PhotoJournalIssue">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoJournalIssue'>">
-      <b>
-       Issue Number or Designation
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoJournalIssue" name="PhotoJournalIssue" size="40" type="text" value="<#PARAM name='PhotoJournalIssue'>"/>
-    <br/>
-   </label>
-   <label for="PhotoJournalMonth">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoJournalMonth'>">
-      <b>
-       Month
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoJournalMonth" name="PhotoJournalMonth" size="40" type="text" value="<#PARAM name='PhotoJournalMonth'>"/>
-    <br/>
-   </label>
-   <label for="PhotoJournalYear">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoJournalYear'>">
-      <b>
-       Year
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" size="40" type="text" value="<#PARAM name='PhotoJournalYear'>"/>
-    <br/>
-   </label>
-   <label for="PhotoJournalInclusivePages">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoJournalInclusivePages'>">
-      <b>
-       Inclusive Pages
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoJournalInclusivePages" name="PhotoJournalInclusivePages" size="40" type="text" value="<#PARAM name='PhotoJournalInclusivePages'>"/>
-    <br/>
-   </label>
-   <label for="ISSN">
-    <span class="field">
-     <span class="<#ERROR name='ERRORISSN'>">
-      <b>
-       ISSN/ISBN (International Standard Serial/Book Number)
-      </b>
-     </span>
-     <br/>
-     <span class="note">
-      If given will speed request processing
-     </span>
-    </span>
-    <input class="f-name" id="ISSN" name="ISSN" size="20" type="text" value="<#PARAM name='ISSN'>"/>
-    <br/>
-   </label>
-   <label for="CallNumber">
-    <span class="field">
-     <span class="<#ERROR name='ERRORCallNumber'>">
-      <b>
-       Call Number
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name='CallNumber'>"/>
-    <br/>
-   </label>
-   <label for="ESPNumber">
-    <span class="field">
-     <span class="<#ERROR name='ERRORESPNumber'>">
-      <b>
-       OCLC or Docline UI Number
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
     <br/>
    </label>
    <label for="PhotoArticleAuthor">
@@ -328,6 +237,97 @@
     </span>
     <textarea class="f-name" cols="40" id="PhotoArticleTitle" name="PhotoArticleTitle" rows="2"><#PARAM name='PhotoArticleTitle'></textarea>
     <br/>
+   </label>    
+   <label for="PhotoJournalVolume">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoJournalVolume'>">
+      <b>
+       Volume
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalVolume" name="PhotoJournalVolume" size="40" type="text" value="<#PARAM name='PhotoJournalVolume'>"/>
+    <br/>
+   </label>
+   <label for="PhotoJournalIssue">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoJournalIssue'>">
+      <b>
+       Issue Number (if given)
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalIssue" name="PhotoJournalIssue" size="40" type="text" value="<#PARAM name='PhotoJournalIssue'>"/>
+    <br/>
+   </label>
+   <label for="PhotoJournalMonth">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoJournalMonth'>">
+      <b>
+       Month (or designation such as Winter, Spring, etc.--if given)
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalMonth" name="PhotoJournalMonth" size="40" type="text" value="<#PARAM name='PhotoJournalMonth'>"/>
+    <br/>
+   </label>
+   <label for="PhotoJournalYear">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORPhotoJournalYear'>">
+      <b>
+       Year
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" size="40" type="text" value="<#PARAM name='PhotoJournalYear'>"/>
+    <br/>
+   </label>
+   <label for="PhotoJournalInclusivePages">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoJournalInclusivePages'>">
+      <b>
+       Pages (starting and ending pages, e.g., 237-242)
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoJournalInclusivePages" name="PhotoJournalInclusivePages" size="40" type="text" value="<#PARAM name='PhotoJournalInclusivePages'>"/>
+    <br/>
+   </label>
+   <label for="ISSN">
+    <span class="field">
+     <span class="<#ERROR name='ERRORISSN'>">
+      <b>
+       ISSN (if given)
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="ISSN" name="ISSN" size="20" type="text" value="<#PARAM name='ISSN'>"/>
+    <br/>
+   </label>
+   <label for="CallNumber">
+    <span class="field">
+     <span class="<#ERROR name='ERRORCallNumber'>">
+      <b>
+       Call Number
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="CallNumber" name="CallNumber" size="20" type="text" value="<#PARAM name='CallNumber'>"/>
+    <br/>
+   </label>
+   <label for="ESPNumber">
+    <span class="field">
+     <span class="<#ERROR name='ERRORESPNumber'>">
+      <b>
+       WorldCat Accession Number (if given)
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
+    <br/>
    </label>
    <label for="NotWantedAfter">
     <span class="field">
@@ -339,9 +339,9 @@
        Not Wanted After Date
       </b>
      </span>
-     <br/>
+    <br/>
      <span class="note">
-      (MM/DD/YYYY)
+      (MM/DD/YYYY - typical turnaround time is 2-5 days)
      </span>
     </span>
     <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" size="40" type="text" value="<#PARAM name='NotWantedAfter'>"/>
@@ -394,7 +394,7 @@
      </span>
      <br/>
      <span class="note">
-      Put any information here that may help us find the item, as well as any other pertinent information.
+      Add any information here that may help us find the item.
      </span>
     </span>
     <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
