@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Book Request - Interlibrary Loan, Smith College Libraries</title>
+    <title>Book & Media Request - Interlibrary Loan, Smith College Libraries</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -169,7 +169,7 @@
                 
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>Book Request</h1>
+    <h1>Book & Media Request</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
@@ -187,8 +187,13 @@
   </div>
   <fieldset>
    <h3>
-    Book Request
+    Book & Media Request
    </h3>
+      <p><b>Important reminder:</b></p>
+    <ul>
+      <li>Use this form to request the loan of an entire work, e.g. books, dissertations/theses, musical scores, audio-visual materials, and microforms.</li>
+      <li>Use "Request item" in the Five College Library Catalog to request books and media available in the Five Colleges.</li>
+    </ul>
    <#STATUS>
    <h2>
     Describe the item you want
@@ -203,6 +208,8 @@
        Author/Editors
       </b>
      </span>
+        <br/>
+        <span class="note">last name first</span>
     </span>
     <input class="f-name" id="LoanAuthor" name="LoanAuthor" size="40" type="text" value="<#PARAM name='LoanAuthor'>"/>
     <br/>
@@ -265,15 +272,40 @@
        Edition
       </b>
      </span>
+         <br/>
+     <span class="note">
+      e.g. 2nd, 7th, etc.
+     </span>
     </span>
     <input class="f-name" id="LoanEdition" name="LoanEdition" size="40" type="text" value="<#PARAM name='LoanEdition'>"/>
+    <br/>
+   </label>
+   <label for="AcceptAlternateEdition">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAcceptAlternateEdition'>">
+      <b>
+       Will you accept an alternate edition of this item?
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="AcceptAlternateEdition" name="AcceptAlternateEdition" size="1">
+     <option selected="">
+      <#PARAM name='AcceptAlternateEdition'>
+     </option>
+     <option>
+      No
+     </option>
+     <option>
+      Yes
+     </option>
+    </select>
     <br/>
    </label>
    <label for="ISSN">
     <span class="field">
      <span class="<#ERROR name='ERRORISSN'>">
       <b>
-       ISBN (International Standard Book Number)
+       ISBN
       </b>
      </span>
      <br/>
@@ -299,9 +331,13 @@
     <span class="field">
      <span class="<#ERROR name='ERRORESPNumber'>">
       <b>
-       OCLC or Docline UI Number
+       WorldCat Accession Number
       </b>
      </span>
+        <br/>
+     <span class="note">
+        Enter the number only, with no other symbols or characters.
+        </span>
     </span>
     <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
     <br/>
@@ -318,7 +354,7 @@
      </span>
      <br/>
      <span class="note">
-      (MM/DD/YYYY)
+      (MM/DD/YYYY - typical turnaround time for books is 7-14 days)
      </span>
     </span>
     <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" size="40" type="text" value="<#PARAM name='NotWantedAfter'>"/>
@@ -339,27 +375,6 @@
     <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
      <option selected="">
       <#PARAM name='AcceptNonEnglish'>
-     </option>
-     <option>
-      No
-     </option>
-     <option>
-      Yes
-     </option>
-    </select>
-    <br/>
-   </label>
-   <label for="AcceptAlternateEdition">
-    <span class="field">
-     <span class="<#ERROR name='ERRORAcceptAlternateEdition'>">
-      <b>
-       Will you accept an alternate edition of this item?
-      </b>
-     </span>
-    </span>
-    <select class="f-name" id="AcceptAlternateEdition" name="AcceptAlternateEdition" size="1">
-     <option selected="">
-      <#PARAM name='AcceptAlternateEdition'>
      </option>
      <option>
       No
@@ -392,7 +407,7 @@
      </span>
      <br/>
      <span class="note">
-      Put any information here that may help us find the item, as well as any other pertinent information.
+      Add any information here that may help us find the item.
      </span>
     </span>
     <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
