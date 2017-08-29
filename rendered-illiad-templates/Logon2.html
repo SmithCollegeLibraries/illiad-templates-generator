@@ -7,7 +7,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <title>Interlibrary Loan Logon - Interlibrary Loan, Smith College Libraries</title>
+    <title>ILLiad Logon - Interlibrary Loan, Smith College Libraries</title>
     <meta name="description" content="" />
     <meta name="author" content="" />
 
@@ -169,7 +169,7 @@
                 
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>Interlibrary Loan Logon</h1>
+    <h1>ILLiad Logon</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
@@ -181,9 +181,8 @@
   <div id="logonform">
    <fieldset>
     <h3>
-     Interlibrary Loan Logon
+     ILLiad Logon
     </h3>
-       <p><b>Incorrect username or password. Please try again or contact ILL for assistance.</b></p> 
     <label for="username">
      <span class="field">
       <b>
@@ -203,7 +202,7 @@
      <br/>
     </label>
     <div class="f-submit-wrap">
-     <input class="f-submit" name="SubmitButton" type="submit" value="Logon to Interlibrary Loan"/>
+     <input class="f-submit" name="SubmitButton" type="submit" value="Logon to ILLiad"/>
      <br/>
     </div>
    </fieldset>
@@ -212,12 +211,8 @@
  <form action="illiad.dll?Action=10&Form=79" id="RegisterForm" method="post" name="RegisterForm">
   <#FORMSTATE>
   <a href="#" onclick="RegisterForm.submit(); return false;">
-   Register for Interlibrary Loan
+   First Time Users
   </a>
-      <br/>
-    <span class="note">
-        <b>First time users</b> must register and create an interlibrary loan account username and password.
-     </span>
  </form>
  <#INCLUDE filename='include_footer.html'>
 </div>
