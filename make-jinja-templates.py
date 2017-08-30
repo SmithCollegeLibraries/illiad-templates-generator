@@ -21,6 +21,7 @@ top = """
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
+        <div id="status"><#STATUS></div>
           <!-- MAIN CONTENT AREA -->
 """
 
