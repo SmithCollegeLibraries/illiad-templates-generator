@@ -15,20 +15,25 @@
   <input name="ILLiadForm" type="hidden" value="BookChapterRequest"/>
   <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
   <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
-  <div class="req">
+  <fieldset>
+   <h3>
+    {{ self.title() }}
+   </h3>
+      <ul>
+          <li>Search the online catalog under the author/editor or title of the book, and not of the individual chapter or essay.</li>
+          <li>Use "Request item" in the Five College Library Catalog to request books in the Five Colleges.</li>
+          <li>Use this form to request a PDF of a chapter or essay from a book not held in the Five Colleges.</li>
+      </ul>        
+   <#STATUS>
+   <h2>
+    Describe the item you want
+   </h2>
+       <div class="req">
    <b>
     *
    </b>
    Indicates required field
   </div>
-  <fieldset>
-   <h3>
-    Book Chapter Request
-   </h3>
-   <#STATUS>
-   <h2>
-    Describe the item you want
-   </h2>
    <label for="PhotoJournalTitle">
     <span class="field">
      <span class="req">
@@ -41,7 +46,7 @@
      </span>
      <br/>
      <span class="note">
-      Please do not abbreviate unless your citation is abbreviated
+      Please do not abbreviate
      </span>
     </span>
     <textarea class="f-name" cols="40" id="PhotoJournalTitle" name="PhotoJournalTitle" rows="2"><#PARAM name='PhotoJournalTitle'></textarea>
@@ -53,6 +58,10 @@
       <b>
        Book Author/Editor
       </b>
+     </span>
+         <br/>
+     <span class="note">
+      Last name first
      </span>
     </span>
     <input class="f-name" id="PhotoItemAuthor" name="PhotoItemAuthor" size="40" type="text" value="<#PARAM name='PhotoItemAuthor'>"/>
@@ -91,6 +100,28 @@
     <input class="f-name" id="PhotoJournalYear" name="PhotoJournalYear" size="40" type="text" value="<#PARAM name='PhotoJournalYear'>"/>
     <br/>
    </label>
+       <label for="PhotoArticleAuthor">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoArticleAuthor'>">
+      <b>
+       Chapter/Essay Author
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="PhotoArticleAuthor" name="PhotoArticleAuthor" size="40" type="text" value="<#PARAM name='PhotoArticleAuthor'>"/>
+    <br/>
+   </label>
+   <label for="PhotoArticleTitle">
+    <span class="field">
+     <span class="<#ERROR name='ERRORPhotoArticleTitle'>">
+      <b>
+       Chapter/Essay Title
+      </b>
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="PhotoArticleTitle" name="PhotoArticleTitle" rows="2"><#PARAM name='PhotoArticleTitle'></textarea>
+    <br/>
+   </label>
    <label for="PhotoItemEdition">
     <span class="field">
      <span class="<#ERROR name='ERRORPhotoItemEdition'>">
@@ -106,9 +137,13 @@
     <span class="field">
      <span class="<#ERROR name='ERRORPhotoJournalInclusivePages'>">
       <b>
-       Inclusive Pages
+       Pages
       </b>
      </span>
+        <br/>
+     <span class="note">
+         Provide starting and ending pages, e.g., 325-343
+        </span>
     </span>
     <input class="f-name" id="PhotoJournalInclusivePages" name="PhotoJournalInclusivePages" size="40" type="text" value="<#PARAM name='PhotoJournalInclusivePages'>"/>
     <br/>
@@ -117,7 +152,7 @@
     <span class="field">
      <span class="<#ERROR name='ERRORISSN'>">
       <b>
-       ISSN/ISBN (International Standard Serial/Book Number)
+       ISBN
       </b>
      </span>
      <br/>
@@ -143,33 +178,15 @@
     <span class="field">
      <span class="<#ERROR name='ERRORESPNumber'>">
       <b>
-       OCLC or Docline UI Number
+       WorldCat Accession Number
       </b>
      </span>
+        <br/>
+     <span class="note">
+         Enter the number only, with no other symbols or characters.
+        </span>
     </span>
     <input class="f-name" id="ESPNumber" name="ESPNumber" size="20" type="text" value="<#PARAM name='ESPNumber'>"/>
-    <br/>
-   </label>
-   <label for="PhotoArticleAuthor">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoArticleAuthor'>">
-      <b>
-       Chapter Author
-      </b>
-     </span>
-    </span>
-    <input class="f-name" id="PhotoArticleAuthor" name="PhotoArticleAuthor" size="40" type="text" value="<#PARAM name='PhotoArticleAuthor'>"/>
-    <br/>
-   </label>
-   <label for="PhotoArticleTitle">
-    <span class="field">
-     <span class="<#ERROR name='ERRORPhotoArticleTitle'>">
-      <b>
-       Chapter Title
-      </b>
-     </span>
-    </span>
-    <textarea class="f-name" cols="40" id="PhotoArticleTitle" name="PhotoArticleTitle" rows="2"><#PARAM name='PhotoArticleTitle'></textarea>
     <br/>
    </label>
    <label for="NotWantedAfter">
@@ -184,7 +201,7 @@
      </span>
      <br/>
      <span class="note">
-      (MM/DD/YYYY)
+      (MM/DD/YYYY - typical turnaround time is 2-5 days)
      </span>
     </span>
     <input class="f-name" id="NotWantedAfter" name="NotWantedAfter" size="40" type="text" value="<#PARAM name='NotWantedAfter'>"/>
@@ -237,7 +254,7 @@
      </span>
      <br/>
      <span class="note">
-      Put any information here that may help us find the item, as well as any other pertinent information.
+      Add any information here that may help us find the item.
      </span>
     </span>
     <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>

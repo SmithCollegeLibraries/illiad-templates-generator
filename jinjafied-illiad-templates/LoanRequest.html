@@ -1,6 +1,6 @@
 
 {% extends "layouts/layout.html" %}
-{% block title %}Book & Media Request{% endblock %}
+{% block title %}Book &amp; Media Request{% endblock %}
 
 {% block content %}
 <div id="wrap">
@@ -15,17 +15,10 @@
   <input name="ILLiadForm" type="hidden" value="LoanRequest"/>
   <input name="Username" type="hidden" value="<#PARAM name='Username'>"/>
   <input name="SessionID" type="hidden" value="<#PARAM name='SessionID'>"/>
-  <div class="req">
-   <b>
-    *
-   </b>
-   Indicates required field
-  </div>
   <fieldset>
    <h3>
     {{ self.title() }}
    </h3>
-      <p><b>Important reminder:</b></p>
     <ul>
       <li>Use this form to request the loan of an entire work, e.g. books, dissertations/theses, musical scores, audio-visual materials, and microforms.</li>
       <li>Use "Request item" in the Five College Library Catalog to request books and media available in the Five Colleges.</li>
@@ -34,6 +27,12 @@
    <h2>
     Describe the item you want
    </h2>
+       <div class="req">
+   <b>
+    *
+   </b>
+   Indicates required field
+  </div>
    <label for="LoanAuthor">
     <span class="field">
      <span class="req">
@@ -62,7 +61,7 @@
      </span>
      <br/>
      <span class="note">
-      Please do not abbreviate unless your citation is abbreviated
+      Please do not abbreviate
      </span>
     </span>
     <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name='LoanTitle'></textarea>
