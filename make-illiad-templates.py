@@ -21,15 +21,15 @@ templateEnv = jinja2.Environment( loader=templateLoader )
 
 for inputFile in glob.glob(inputPath + '/' + "*.html"):
     logging.info('Parsing %s' % inputFile)
+    inputFileBasename = os.path.basename( inputFile )
 
     # Read the template file using the environment object.
     # This also constructs our Template object.
     template = templateEnv.get_template( inputFile )
 
     # Specify any input variables to the template as a dictionary.
-    templateVars = { "title" : "Test Example",
-                     "description" : "A simple inquiry of function." }
-    outputFilePath = outputPath + '/' + os.path.basename( inputFile )
+    templateVars = { "templateFilename" : inputFileBasename }
+    outputFilePath = outputPath + '/' + inputFileBasename
 
     with open(outputFilePath, 'w') as f:
         # Finally, process the template to produce our final text.

@@ -14,6 +14,7 @@ top = """
 {% block title %}$title{% endblock %}
 
 {% block content %}
+<!-- Template file: {{ templateFilename }} -->
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
     <h1>{{ self.title() }}</h1>
