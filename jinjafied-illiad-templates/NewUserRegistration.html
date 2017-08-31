@@ -26,11 +26,8 @@
    <h3>
     {{ self.title() }}
    </h3>
-      <p><a href="#research-assistants"><b>Important Information for Research assistants:</b></a> Please read before filling out this registration form.</p>
-      <h4>Warning Concerning Copyright Restrictions</h4>
-<p>The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
-Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of "fair use", that user may be liable for copyright infringement.
-This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.</p>
+      <h4>Important Information for Research Assistants</h4>
+      <p>Please read <a href="#research-assistants">Information for Research Assistants</a> at the bottom of this page before filling out this form.</p>
    <label for="FirstName">
     <span class="field">
      <span class="req">
@@ -279,14 +276,12 @@ Research assistants--use proxy card barcode (See Below).</span>
     <span class="field">
      <span class="<#ERROR name='ERRORAuthorizedUsers'>">
       <b>
-       Research Assistant Name (for research assistant use only)
+       Research Assistant Name
       </b>
      </span>
      <br/>
      <span class="note">
-      List the full names of anyone you wish to be allowed to pick up your ILL items.
-      <br/>
-      An ID will be REQUIRED to pick items up.
+      For Research Assistant use only - list the full names of anyone you wish to be allowed to pick up your ILL items.
      </span>
     </span>
     <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
@@ -424,7 +419,11 @@ Research assistants--use proxy card barcode (See Below).</span>
    </label>
    <#include filename='include_notification_preferences.html'>
    <div align="left">
-       <p>By registering to use Interlibrary Loan, you acknowledge and agree to the copyright terms and conditions above.</p>
+       <h4>Warning Concerning Copyright Restrictions</h4>
+<p>The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
+Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of "fair use", that user may be liable for copyright infringement.
+This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.</p>
+       <p>By registering to use Interlibrary Loan, you acknowledge and agree to the copyright terms and conditions outlined above.</p>
        </div>
        <br/>
    <div align="right" class="f-submit-wrap">

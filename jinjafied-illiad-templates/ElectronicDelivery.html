@@ -1,6 +1,6 @@
 
 {% extends "layouts/layout.html" %}
-{% block title %}Electronic Delivery{% endblock %}
+{% block title %}PDFs Received{% endblock %}
 
 {% block content %}
 <!-- Template file: {{ templateFilename }} -->
@@ -13,22 +13,17 @@
         <div id="status"><#STATUS></div>
           <!-- MAIN CONTENT AREA -->
 <div>
- Articles posted to this page will remain accessible by the requestor for
- <b>
-  30 days from the date of posting
- </b>
- .
- <br/>
- If, prior to this time, you no longer require the use of an article, you may delete it using the "Delete" link to the right of the article information.
  <p>
+  Articles posted to this page will remain accessible by the requestor for <b>30 days from the date of posting</b>.
  </p>
  <p>
-  In the event that you accidentally delete an article from this web page, you may
-  <a 10"="" form="65" href="<#ACTION action=">
-   ">undelete
-  </a>
-  articles or e-mail us at <#LOCALINFO field="GeneralEMailAddress"> to have them reset.
+ In the event that you accidentally delete a needed article from this web page--or if an article is incomplete or illegible--please email the Interlibrary Loan Office snnill@smith.edu immediately.
  </p>
+  <h4>Warning Concerning Copyright Restrictions<h4>
+ <p>
+ The Copyright Law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
+Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research." If electronic transmission of material is used for purposes in excess of what constitutes "fair use," that user may be liable for copyright infringement.
+ </p>   
  <div class="default-table">
   <#TABLE name='ElectronicDelivery' headerText="Electronically Received Articles" column="TransactionNumber:Transaction" column="View" column="Size" column="Title" column="Author" column="Expires" column="Delete">
   <br/>
