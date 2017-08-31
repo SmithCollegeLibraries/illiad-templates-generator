@@ -26,7 +26,7 @@
   </div>
   <fieldset>
    <h3>
-    Change Personal Information
+    {{ self.title() }}
    </h3>
    <label for="FirstName">
     <span class="field">
@@ -63,9 +63,13 @@
      </span>
      <span class="<#ERROR name='ERRORSSN'>">
       <b>
-       ID Number
+       Smith OneCard Number
       </b>
      </span>
+        <br/>
+     <span class="note">99 number on the front of your OneCard. 
+Research assistants--use proxy card barcode.</span>
+    </span>
     </span>
     <input class="f-name" id="SSN" name="SSN" size="40" type="text" value="<#PARAM name='SSN'>"/>
     <br/>
@@ -80,6 +84,9 @@
        E-Mail Address
       </b>
      </span>
+        <br/>
+     <span class="note">Notices are sent to @smith.edu addresses only.</span>
+    </span>
     </span>
     <input class="f-name" id="EMailAddress" name="EMailAddress" size="40" type="text" value="<#PARAM name='EMailAddress'>"/>
     <br/>
@@ -268,14 +275,12 @@
     <span class="field">
      <span class="<#ERROR name='ERRORAuthorizedUsers'>">
       <b>
-       Authorized Users
+       Research Assistant Name
       </b>
      </span>
      <br/>
      <span class="note">
-      List the full names of anyone you wish to be allowed to pick up your ILL items.
-      <br/>
-      An ID will be REQUIRED to pick items up.
+      For Research Assistant use only - list the full names of anyone you wish to be allowed to pick up your ILL items.
      </span>
     </span>
     <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
