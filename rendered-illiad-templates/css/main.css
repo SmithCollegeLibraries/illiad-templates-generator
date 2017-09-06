@@ -123,7 +123,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-1 h3 {
   margin: 0 0 .6em;
   font: bold 155% arial;
-  color: #c00;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-1 label {
   clear: left;
@@ -154,7 +154,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   font-weight: normal;
 }
 #illiad-content form.f-wrap-1 label .field .req {
-  color: #c00;
+  color: #003e51;
   font-size: 150%;
   font-weight: normal;
   position: absolute;
@@ -176,7 +176,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   text-align: right;
 }
 #illiad-content form.f-wrap-1 div.req b {
-  color: #c00;
+  color: #003e51;
   font-size: 140%;
 }
 #illiad-content form.f-wrap-1 label select {
@@ -263,7 +263,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-2 h3 {
   margin: 0 0 .6em;
   font: bold 155% arial;
-  color: #c00;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-2 label {
   clear: left;
@@ -287,7 +287,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   position: relative;
 }
 #illiad-content form.f-wrap-2 label b .req {
-  color: #c00;
+  color: #003e51;
   font-size: 150%;
   font-weight: normal;
   position: absolute;
@@ -309,7 +309,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   text-align: right;
 }
 #illiad-content form.f-wrap-2 div.req b {
-  color: #c00;
+  color: #003e51;
   font-size: 140%;
 }
 #illiad-content form.f-wrap-2 label select {
@@ -395,7 +395,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-request h3 {
   margin: 0 0 .6em;
   font: bold 155% arial;
-  color: #c00;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-request h2 {
   margin: .6em 0 .6em;
@@ -431,7 +431,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   font-weight: normal;
 }
 #illiad-content form.f-wrap-request label b .req {
-  color: #c00;
+  color: #003e51;
   font-size: 150%;
   font-weight: normal;
   position: absolute;
@@ -454,7 +454,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   font-weight: normal;
 }
 #illiad-content form.f-wrap-request label .field .req {
-  color: #c00;
+  color: #003e51;
   font-size: 150%;
   font-weight: bold;
   position: absolute;
@@ -476,7 +476,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   text-align: right;
 }
 #illiad-content form.f-wrap-request div.req b {
-  color: #c00;
+  color: #003e51;
   font-size: 140%;
 }
 #illiad-content form.f-wrap-request label select {
@@ -563,7 +563,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-detail h3 {
   margin: 0 0 .6em;
   font: bold 155% arial;
-  color: #c00;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-detail h2 {
   margin: .6em 0 .6em;
@@ -599,7 +599,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   font-weight: normal;
 }
 #illiad-content form.f-wrap-detail label b .req {
-  color: #c00;
+  color: #003e51;
   font-size: 150%;
   font-weight: normal;
   position: absolute;
@@ -621,7 +621,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   text-align: right;
 }
 #illiad-content form.f-wrap-detail div.req b {
-  color: #c00;
+  color: #003e51;
   font-size: 140%;
 }
 #illiad-content form.f-wrap-detail label select {
@@ -738,7 +738,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   color: #999;
 }
 #illiad-content .error {
-  color: #c00;
+  color: #C00;
   font-weight: bold;
 }
 #illiad-content .success {
@@ -1095,7 +1095,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content #transactionMenu a:link,
 #illiad-content #transactionMenu a:visited {
-  color: #c00;
+  color: #003e51;
   font-weight: bold;
   line-height: 2em;
   padding: 0.3em;
@@ -1182,21 +1182,21 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   color: #000;
 }
 #illiad-content #nav a:hover {
-  color: #c00;
+  color: #003e51;
   background: #fee url("images/sprites.gif") no-repeat 10px -695px;
 }
 #illiad-content #nav li.active a:link,
 #illiad-content #nav li.active a:visited,
 #illiad-content #nav li.active a:hover,
 #illiad-content #nav li.active a:active {
-  color: #C00;
+  color: #003e51;
 }
 #illiad-content #nav li {
   border-top: 1px solid #fff;
   border-bottom: 1px solid #ccc;
 }
 #illiad-content #nav .default {
-  color: #C00;
+  color: #003e51;
 }
 #illiad-content #nav ul {
   margin: 0 0 1em 23px;
@@ -1216,7 +1216,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content #nav li.active li a:hover,
 #illiad-content #nav li.active li a:active {
-  color: #c00;
+  color: #003e51;
 }
 #illiad-content #nav li.active li {
   border: none;
