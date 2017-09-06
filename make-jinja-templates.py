@@ -34,9 +34,10 @@ bottom = """
 {% endblock %}
 """
 
-for inputFileName in glob.glob(inputPath + '/' + "*.html"):
+for inputFilePathName in glob.glob(inputPath + '/' + "*.html"):
+    inputFileName = os.path.basename( inputFilePathName )
     logging.info('Processing %s' % inputFileName)
-    with open(inputFileName) as fp:
+    with open(inputFilePathName) as fp:
         template = fp.read()
         template = re.sub("name\=\"(.*?)\"", r"""name='\1'""", template, flags=re.DOTALL)
         soup = BeautifulSoup(template, "html5lib")
@@ -44,7 +45,7 @@ for inputFileName in glob.glob(inputPath + '/' + "*.html"):
         try:
             content = contents[0]
         except IndexError:
-            logging.warning('Could not parse %s' % inputFileName)
+            logging.warning('Could not parse %s' % inputFilePathName)
             continue
         # Set title
         title = soup.find('title').string
@@ -57,7 +58,7 @@ for inputFileName in glob.glob(inputPath + '/' + "*.html"):
 
         # Write full page template
         content_text = content.prettify(formatter=None)
-        outputFilePath = outputPath + '/' + os.path.basename( inputFileName )
+        outputFilePath = outputPath + '/' + intputFileName
         logging.info('Writing %s' % outputFilePath)
         with open(outputFilePath, "w") as f:
             f.write(topWithTitle)
