@@ -29,11 +29,10 @@ python3 make-illiad-templates.py
 ## Less css compiling
 ```
 npm install -g less
-cd css/
-lessc main.less main.css
+lessc css/main.less css/main.css
 ```
 
 ## Deployment
 ```
-cp -r rendered-illiad-templates/* illiad-ftp-folder-webtest/
+cp -r rendered-illiad-templates/* illiad-ftp-folder-webtest/ && cp css/* illiad-ftp-folder-webtest/css/
 ```
