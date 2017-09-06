@@ -1,6 +1,8 @@
 /* This file contains additional customizations for the Smith/Illiad integration */
 #illiad-content {
   /* Hide unused fields */
+  /* Style status message */
+  /* Add a little breathing room under tables */
 }
 #illiad-content label[for="CallNumber"] {
   display: none;
@@ -23,14 +25,16 @@
 #illiad-content label[for="CitedPages"] {
   display: none;
 }
-/* Style status message */
-#status {
+#illiad-content #status {
   padding: 3% !important;
   border: 1px solid grey !important;
   margin: 0 !important;
   margin-bottom: 1em !important;
 }
-#status span:before {
+#illiad-content #status span:before {
   font-family: FontAwesome;
   content: "\f05a\00a";
+}
+#illiad-content table {
+  margin-bottom: 1.5em;
 }
