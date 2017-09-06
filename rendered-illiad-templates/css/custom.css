@@ -4,6 +4,7 @@
   /* Style status message */
   /* Add a little breathing room under tables */
   /* Make columns fit full width of content area */
+  /* Style help block */
 }
 #illiad-content label[for="CallNumber"] {
   display: none;
@@ -44,4 +45,8 @@
 }
 #illiad-content #content-wrap > div:last-child {
   padding-right: 0;
+}
+#illiad-content #library-help {
+  padding: 1em;
+  background-color: whitesmoke;
 }
