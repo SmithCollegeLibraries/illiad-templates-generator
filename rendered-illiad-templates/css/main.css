@@ -20,7 +20,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   /* hide from IE mac \*/
   /* end hiding from IE5 mac */
   /* TYPOGRAPHY */
-  /* LISTS */
   /* GENERAL */
   /* LAYOUT - HEADER */
   /* SEARCH */
@@ -725,35 +724,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content small {
   font-size: 11px;
-}
-#illiad-content ul {
-  margin: .3em 0 1.5em 0;
-  list-style-type: none;
-}
-#illiad-content ul.related {
-  margin-top: -1em;
-}
-#illiad-content ol {
-  margin: 0.5em 0.5em 1.5em;
-}
-#illiad-content ol li {
-  margin-left: 1.4em;
-  padding-left: 0;
-  background: none;
-  list-style-type: decimal;
-}
-#illiad-content li {
-  line-height: 1.4em;
-  padding-left: 15px;
-  background-image: url(/css/images/bullet.gif);
-  background-repeat: no-repeat;
-}
-#illiad-content li.doc {
-  background-position: 3px -500px;
-}
-#illiad-content ul.nomarker li {
-  background: none;
-  padding-left: 0;
 }
 #illiad-content dl {
   margin: 0 0 1em 0;
