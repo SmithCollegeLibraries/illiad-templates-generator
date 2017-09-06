@@ -3,6 +3,7 @@
   /* Hide unused fields */
   /* Style status message */
   /* Add a little breathing room under tables */
+  /* Make columns fit full width of content area */
 }
 #illiad-content label[for="CallNumber"] {
   display: none;
@@ -37,4 +38,10 @@
 }
 #illiad-content table {
   margin-bottom: 1.5em;
+}
+#illiad-content #content-wrap > div:first-child {
+  padding-left: 0;
+}
+#illiad-content #content-wrap > div:last-child {
+  padding-right: 0;
 }
