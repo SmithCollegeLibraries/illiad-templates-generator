@@ -699,38 +699,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content ol {
   margin: 0 0 1.5em;
 }
-#illiad-content h1,
-#illiad-content h2,
-#illiad-content h3,
-#illiad-content h4,
-#illiad-content h5,
-#illiad-content h6 {
-  letter-spacing: -1px;
-  font-family: arial, verdana, sans-serif;
-  margin: 1.2em 0 .3em;
-  color: #000;
-  border-bottom: 1px solid #eee;
-  padding-bottom: 0.1em;
-}
-#illiad-content h1 {
-  font-size: 196%;
-  margin-top: 0.6em;
-}
-#illiad-content h2 {
-  font-size: 136%;
-}
-#illiad-content h3 {
-  font-size: 126%;
-}
-#illiad-content h4 {
-  font-size: 116%;
-}
-#illiad-content h5 {
-  font-size: 106%;
-}
-#illiad-content h6 {
-  font-size: 96%;
-}
 #illiad-content .highlight {
   color: #E17000;
 }
