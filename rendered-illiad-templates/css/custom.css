@@ -5,6 +5,7 @@
   /* Add a little breathing room under tables */
   /* Make columns fit full width of content area */
   /* Style help block */
+  /* Position required field note more visibly */
 }
 #illiad-content label[for="CallNumber"] {
   display: none;
@@ -49,4 +50,11 @@
 #illiad-content #library-help {
   padding: 1em;
   background-color: whitesmoke;
+}
+#illiad-content div.req {
+  position: relative !important;
+  width: auto !important;
+  text-align: left !important;
+  margin-bottom: 1em;
+  font-size: 100% !important;
 }
