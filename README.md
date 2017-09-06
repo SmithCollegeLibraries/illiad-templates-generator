@@ -25,3 +25,15 @@ cp autojinjafied-illiad-templates/* jinjafied-illiad-templates/ # or do diff/pat
 hack ... hack ... in jinjafied-illiad-templates/
 python3 make-illiad-templates.py
 ```
+
+## Less css compiling
+```
+npm install -g less
+cd css/
+lessc main.less main.css
+```
+
+## Deployment
+```
+cp -r rendered-illiad-templates/* illiad-ftp-folder-webtest/
+```
