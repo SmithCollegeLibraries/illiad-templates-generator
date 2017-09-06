@@ -96,7 +96,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 	form.f-wrap-request {width:100%;padding: .5em 0;background: #f6f6f6;border-top: 1px solid #d7d7d7;position:relative}
 	form.f-wrap-request fieldset {width:auto;margin: 0 1em}
 	form.f-wrap-request h3 {margin:0 0 .6em;font: bold 155% arial;color:@main-color}
-	form.f-wrap-request h2 {margin:.6em 0 .6em;font: bold 155% arial;color:#000066}
+	form.f-wrap-request h2 {margin:.6em 0 .6em;font: bold 155% arial;color:@main-color}
 	form.f-wrap-request label {clear:left;float:left;width:100%;border-bottom: 1px solid #fff}
 
 	/* hide from IE mac \*/
@@ -133,7 +133,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 	form.f-wrap-detail {width:100%;padding: .5em 0;background: #f6f6f6;border-top: 1px solid #d7d7d7;position:relative}
 	form.f-wrap-detail fieldset {width:auto;margin: 0 1em}
 	form.f-wrap-detail h3 {margin:0 0 .6em;font: bold 155% arial;color:@main-color}
-	form.f-wrap-detail h2 {margin:.6em 0 .6em;font: bold 155% arial;color:#000066}
+	form.f-wrap-detail h2 {margin:.6em 0 .6em;font: bold 155% arial;color:@main-color}
 	form.f-wrap-detail label {clear:left;float:left;width:100%;border-bottom: 1px solid #fff}
 
 	/* hide from IE mac \*/
@@ -198,13 +198,13 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 	.clear {clear:both;position:relative;font-size:0px;height:0px;line-height:0px} 
 
 	/* LAYOUT - HEADER */
-	#header {background-color: #efefef; border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC; border-top: 5px solid #000066;border-bottom: 5px solid #000066;margin: 0 0 25px;padding: 6px 0 0 2px}
-	#header #site-name {font: 265% arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:#000066;border:none}
-	#header #title-name {font: 265% arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:#000066;border:none}
+	#header {background-color: #efefef; border-left: 1px solid #CCCCCC;border-right: 1px solid #CCCCCC; border-top: 5px solid @main-color;border-bottom: 5px solid @main-color;margin: 0 0 25px;padding: 6px 0 0 2px}
+	#header #site-name {font: 265% arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:@main-color;border:none}
+	#header #title-name {font: 265% arial;letter-spacing: -.05em;margin:0px 0 0 40px;padding:3px;color:@main-color;border:none}
 	#header #user-name {font: 100% ariel;margin:0px 0 0 0;padding:3px;color:#333333;border:none}
 		
 	/* SEARCH */
-	#search {color:#000066;font-weight:bold;position:absolute;top:17px;right:10px}
+	#search {color:@main-color;font-weight:bold;position:absolute;top:17px;right:10px}
 	#search form {margin:0 0 5px 0}
 	#search input.f-criteria {width:8em;margin: 0 0 -1px;height:1.6em}	
 	#search label {padding:5px 0 0;display:inline}
@@ -338,12 +338,12 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 	/* DEFAULT TABLE */
 
 	.default-table {width:100%}
-	.default-table table {border: 1px solid #000066;font: 75%/1.5em arial, geneva, sans-serif;border-collapse:collapse;}
+	.default-table table {border: 1px solid @main-color;font: 75%/1.5em arial, geneva, sans-serif;border-collapse:collapse;}
 	.default-table tbody td {font-size: 100%;letter-spacing: 0.05em;}
-	.default-table tbody td, th {border-left: 1px solid #000066;vertical-align: top;padding: 5px;}
+	.default-table tbody td, th {border-left: 1px solid @main-color;vertical-align: top;padding: 5px;}
 	.default-table thead tr {background: #efefef;color:#000;}
-	.default-table thead tr.row-header {background: #000066;color: #fff;}
-	.default-table thead tr.row-headings {border-bottom: 1px solid #000066;}
+	.default-table thead tr.row-header {background: @main-color;color: #fff;}
+	.default-table thead tr.row-headings {border-bottom: 1px solid @main-color;}
 	.default-table thead th {padding: 5px 5px;text-align: left;letter-spacing: 0.2em;font-weight: bold;font-size: 110%}
 	.default-table tbody th {padding: 5px 5px 5px 5px;text-align: left;font-size: 110%;color: #fff;letter-spacing: 0.1em;line-height: 1.5em;text-transform: uppercase;}	
 	.default-table tbody tr.row-odd th {background: #efefef;}

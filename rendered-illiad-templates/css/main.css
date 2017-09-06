@@ -400,7 +400,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-request h2 {
   margin: .6em 0 .6em;
   font: bold 155% arial;
-  color: #000066;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-request label {
   clear: left;
@@ -568,7 +568,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 #illiad-content form.f-wrap-detail h2 {
   margin: .6em 0 .6em;
   font: bold 155% arial;
-  color: #000066;
+  color: #003e51;
 }
 #illiad-content form.f-wrap-detail label {
   clear: left;
@@ -819,8 +819,8 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   background-color: #efefef;
   border-left: 1px solid #CCCCCC;
   border-right: 1px solid #CCCCCC;
-  border-top: 5px solid #000066;
-  border-bottom: 5px solid #000066;
+  border-top: 5px solid #003e51;
+  border-bottom: 5px solid #003e51;
   margin: 0 0 25px;
   padding: 6px 0 0 2px;
 }
@@ -829,7 +829,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   letter-spacing: -0.05em;
   margin: 0px 0 0 40px;
   padding: 3px;
-  color: #000066;
+  color: #003e51;
   border: none;
 }
 #illiad-content #header #title-name {
@@ -837,7 +837,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   letter-spacing: -0.05em;
   margin: 0px 0 0 40px;
   padding: 3px;
-  color: #000066;
+  color: #003e51;
   border: none;
 }
 #illiad-content #header #user-name {
@@ -848,7 +848,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   border: none;
 }
 #illiad-content #search {
-  color: #000066;
+  color: #003e51;
   font-weight: bold;
   position: absolute;
   top: 17px;
@@ -1288,7 +1288,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   width: 100%;
 }
 #illiad-content .default-table table {
-  border: 1px solid #000066;
+  border: 1px solid #003e51;
   font: 75%/1.5em arial, geneva, sans-serif;
   border-collapse: collapse;
 }
@@ -1298,7 +1298,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content .default-table tbody td,
 #illiad-content th {
-  border-left: 1px solid #000066;
+  border-left: 1px solid #003e51;
   vertical-align: top;
   padding: 5px;
 }
@@ -1307,11 +1307,11 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   color: #000;
 }
 #illiad-content .default-table thead tr.row-header {
-  background: #000066;
+  background: #003e51;
   color: #fff;
 }
 #illiad-content .default-table thead tr.row-headings {
-  border-bottom: 1px solid #000066;
+  border-bottom: 1px solid #003e51;
 }
 #illiad-content .default-table thead th {
   padding: 5px 5px;
