@@ -5,7 +5,7 @@
   /* Add a little breathing room under tables */
   /* Make columns fit full width of content area */
   /* Style help block */
-  /* Position required field note more visibly */
+  /* Position required field note for more visibly */
   /* Fine print styling*/
 }
 #illiad-content label[for="CallNumber"] {
@@ -58,6 +58,8 @@
   text-align: left !important;
   margin-bottom: 1em;
   font-size: 100% !important;
+  top: 0 !important;
+  right: 0 !important;
 }
 #illiad-content .fine-print {
   font-size: 80%;
