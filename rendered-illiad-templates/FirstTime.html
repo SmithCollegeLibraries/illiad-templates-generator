@@ -14,7 +14,7 @@
   <link href="https://www.smith.edu/libraries/" rel="shortlink"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <title>
-   ILLiad Logon - Interlibrary Loan, Smith College Libraries
+   New User Registration - Interlibrary Loan, Smith College Libraries
   </title>
   <meta content="width" name="MobileOptimized"/>
   <meta content="true" name="HandheldFriendly"/>
@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <h2 class="element-invisible">
       You are here
      </h2>
-      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li class="breadcrumbcurrent">ILLiad Logon</li></ol>
+      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li class="breadcrumbcurrent">New User Registration</li></ol>
     </div>
    </nav>
    <div class="home-container tier-container" id="main" role="main">
@@ -239,105 +239,468 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Template file: FirstTime.html -->
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>ILLiad Logon</h1>
+    <h1>New User Registration</h1>
     <div id="content-wrap">
-        <#INCLUDE filename="include_menu.html">
-        <div class="col-sm-10">
-        <div id="status"><#STATUS></div>
+        <div class="col-sm-12">
           <!-- MAIN CONTENT AREA -->
 <div>
- <form action="illiad.dll" class="f-wrap-1" method="post" name="Logon">
-  <input name="ILLiadForm" type="hidden" value="Logon"/>
+ <form action="illiad.dll" class="f-wrap-request" method="post" name="Registration">
+  <input name="ILLiadForm" type="hidden" value="Registration"/>
   <#FORMSTATE>
-  <div id="logonform">
-   <fieldset>
-    <h3>
-     First Time User Registration for Interlibrary Loan
-    </h3>
-    <p>
-     To request an item through Interlibrary Loan, you must first identify yourself to the library's ILLiad system. To do this you fill out a registration form using your Web browser.
-     <br/>
-     Registration has three purposes:
-    </p>
-    <ul>
-     <li>
-      Entering your personal information into the ILLiad system means you will not have to supply the information again when making future requests.
-     </li>
-     <li>
-      Having your e-mail and regular mail addresses on file with Interlibrary Loan enables us to notify you promptly and deliver materials accurately when 
-							your request arrives in the library.
-     </li>
-     <li>
-      By specifying a Username and Password of your choosing, you will have secure access to information about your requests. You will also be able to review
-            				the list of items you have requested in the past.
-     </li>
-    </ul>
-    <h2>
-     About your Username and Password
-    </h2>
-    <p>
-     During registration, you will be asked to choose a Username and Password. You will use this Username and Password when logging on to the ILLiad system in the future.
-    </p>
-    <b>
-     Username
-    </b>
-    <br/>
-    Choose anything you like, such as your name, abbreviations, or an alphanumeric code.
-    <br/>
-    <b>
-     Password
-    </b>
-    <br/>
-    Choose anything you like. We recommend that you follow good security practice and choose a password that is different from those you use to access other systems.
-    <br/>
-    ILLiad will encrypt your password, so it will remain secure. Only you will know your password.
-    <hr/>
-    <h2>
-     Important Copyright Information
-    </h2>
-    <p>
-     WARNING CONCERNING COPYRIGHT RESTRICTIONS
-    </p>
-    <p>
-     The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
-    </p>
-    <p>
-     Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the
-    				   photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research". If a user makes a request for, or later uses,
-    				   a photocopy or reproduction for purposes in excess of "fair use", that user may be liable for copyright infringement.
-    </p>
-    <p>
-     This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.
-    </p>
-    <hr/>
-    <h2>
-     ILLiad FAQ (Frequently Asked Questions)
-    </h2>
-    <p>
-     Before registering, you may wish to read the ILLiad
-     <a href="illiad.dll?action=10&form=12" target="_self">
-      FAQ
-     </a>
-     . The FAQ may answer other questions you have about the ILLiad interlibrary loan system.
-    </p>
-    <p>
-     By pressing this button you acknowledge and agree to all of the terms and conditions above. Please pay particular attention to the copyright statement and the ILLiad FAQ. After reading
-    				   this information, you can press the "First Time Users Click Here" button to continue.
-    </p>
-    <div class="f-submit-wrap">
-     <input class="f-submit" name="SubmitButton" type="submit" value="First Time Users Click Here"/>
-     <br/>
-    </div>
-   </fieldset>
+  <div class="req">
+   <b>
+    *
+   </b>
+   Indicates required field
   </div>
+  <fieldset>
+   <h3>
+    New User Registration
+   </h3>
+      <h4>Important Information for Research Assistants</h4>
+      <p>Please read <a href="#research-assistants">Information for Research Assistants</a> at the bottom of this page before filling out this form.</p>
+   <label for="FirstName">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORFirstName'>">
+      <b>
+       First Name
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="FirstName" name="FirstName" size="40" type="text" value="<#PARAM name='FirstName'>"/>
+    <br/>
+   </label>
+   <label for="LastName">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORLastName'>">
+      <b>
+       Last Name
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="LastName" name="LastName" size="40" type="text" value="<#PARAM name='LastName'>"/>
+    <br/>
+   </label>
+      <label for="AuthorizedUsers">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
+      <b>
+       Research Assistant Name
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      If registering as a Research Assistant, enter your name (<a href="#research-assistants">See Below</a>).
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
+    <br/>
+   </label>
+   <label for="SSN">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORSSN'>">
+      <b>
+       Smith OneCard Number
+      </b>
+     </span>
+        <br/>
+     <span class="note">Enter the 99 number on the front of your OneCard. 
+         <br/>
+         If registering as a Research Assistant, enter the barcode number on your Proxy Library Card (<a href="#research-assistants">See Below</a>).</span>
+    </span>
+    <input class="f-name" id="SSN" name="SSN" size="40" type="text" value="<#PARAM name='SSN'>"/>
+    <br/>
+   </label>
+   <label for="EMailAddress">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERROREMailAddress'>">
+      <b>
+       Smith Email Address
+      </b>
+     </span>
+        <br/>
+     <span class="note">Notices are sent to @smith.edu addresses only.</span>
+    </span>
+    <input class="f-name" id="EMailAddress" name="EMailAddress" size="40" type="text" value="<#PARAM name='EMailAddress'>"/>
+    <br/>
+   </label>
+   <!-- Hide unused fields
+   <label for="Phone">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORPhone'>">
+      <b>
+       Daytime Phone
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Phone" name="Phone" size="40" type="text" value="<#PARAM name='Phone'>"/>
+    <br/>
+   </label>
+   <label for="MobilePhone">
+    <span class="field">
+     <span class="<#ERROR name='ERRORMobilePhone'>">
+      <b>
+       Mobile Phone
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="MobilePhone" name="MobilePhone" size="40" type="text" value="<#PARAM name='MobilePhone'>"/>
+    <br/>
+   </label>
+   <label for="Address">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORAddress'>">
+      <b>
+       Primary Address Line 1
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Address" name="Address" size="40" type="text" value="<#PARAM name='Address'>"/>
+    <br/>
+   </label>
+   <label for="Address2">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAddress2'>">
+      <b>
+       Primary Address Line 2
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Address2" name="Address2" size="40" type="text" value="<#PARAM name='Address2'>"/>
+    <br/>
+   </label>
+   <label for="City">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORCity'>">
+      <b>
+       Primary Address City
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="City" name="City" size="40" type="text" value="<#PARAM name='City'>"/>
+    <br/>
+   </label>
+   <label for="State">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORState'>">
+      <b>
+       Primary Address State
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="State" name="State" size="1">
+     <#OPTION name='custom' groupname='State' selectedValue="<#PARAM name=State>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="Zip">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORZip'>">
+      <b>
+       Primary Address Zip
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="Zip" name="Zip" size="40" type="text" value="<#PARAM name='Zip'>"/>
+    <br/>
+   </label>
+   <label for="SAddress">
+    <span class="field">
+     <span class="<#ERROR name='ERRORSAddress'>">
+      <b>
+       Secondary Address Line 1
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SAddress" name="SAddress" size="40" type="text" value="<#PARAM name='SAddress'>"/>
+    <br/>
+   </label>
+   <label for="SAddress2">
+    <span class="field">
+     <span class="<#ERROR name='ERRORSAddress2'>">
+      <b>
+       Secondary Address Line 2
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SAddress2" name="SAddress2" size="40" type="text" value="<#PARAM name='SAddress2'>"/>
+    <br/>
+   </label>
+   <label for="SCity">
+    <span class="field">
+     <span class="<#ERROR name='ERRORSCity'>">
+      <b>
+       Secondary Address City
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SCity" name="SCity" size="40" type="text" value="<#PARAM name='SCity'>"/>
+    <br/>
+   </label>
+   <label for="SState">
+    <span class="field">
+     <span class="<#ERROR name='ERRORSState'>">
+      <b>
+       Secondary Address State
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="SState" name="SState" size="1">
+     <#OPTION name='custom' groupname='State' selectedValue="<#PARAM name=SState>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="SZip">
+    <span class="field">
+     <span class="<#ERROR name='ERRORSZip'>">
+      <b>
+       Secondary Address Zip
+      </b>
+     </span>
+    </span>
+    <input class="f-name" id="SZip" name="SZip" size="40" type="text" value="<#PARAM name='SZip'>"/>
+    <br/>
+   </label>
+ -->
+   <label for="StatusGroup">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORStatus'>">
+      <b>
+       Status
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="StatusGroup" name="StatusGroup" size="1">
+     <#OPTION name='custom' groupname='StatusGroup' selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
+    </select>
+    <br/>
+   </label>
+   <label for="Department">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORDepartment'>">
+      <b>
+       Department
+      </b>
+     </span>
+        <br/>
+      <span class="note">
+      For faculty only
+     </span>    
+    </span>
+    <select class="f-name" id="Department" name="Department" size="1">
+     <#OPTION name='custom' groupname='Department' selectedValue="<#PARAM name=Department>" defaultValue="" defaultName=""/>
+    </select>
+    <br/>
+   </label>
+   <label for="AuthorizedUsers">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
+      <b>
+       Research Assistant Name
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      For Research Assistant use only - list the full names of anyone you wish to be allowed to pick up your ILL items.
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
+    <br/>
+   </label>
+   <!-- Hide unused fields
+   <label for="NVTGC">
+    <span class="field">
+     <span class="<#ERROR name='ERRORNVTGC'>">
+      <b>
+       Delivery Location
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="NVTGC" name="NVTGC" size="1">
+     <#OPTION name='custom' groupname='NVTGC' selectedValue="<#PARAM name=NVTGC>" defaultValue="" defaultName=""/>
+    </select>
+    <br/>
+   </label>
+ -->
+   <label for="Username">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORUsername'>">
+      <b>
+       Choose a Username
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      Case sensitive
+     </span>
+    </span>
+    <input class="f-name" id="Username" name="Username" size="40" type="text" value="<#PARAM name='Username'>"/>
+    <br/>
+   </label>
+   <label for="Password1">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORPassword1'>">
+      <b>
+       Choose a Password
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      Case sensitive
+     </span>
+    </span>
+    <input class="f-name" id="Password1" name="Password1" size="40" type="password" value="<#PARAM name='Password1'>"/>
+    <br/>
+   </label>
+   <label for="Password2">
+    <span class="field">
+     <span class="req">
+      *
+     </span>
+     <span class="<#ERROR name='ERRORPassword2'>">
+      <b>
+       Re-enter Password
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      Case sensitive
+     </span>
+    </span>
+    <input class="f-name" id="Password2" name="Password2" size="40" type="password" value="<#PARAM name='Password2'>"/>
+    <br/>
+   </label>
+   <!-- Hide unused fields
+   <label for="DeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name='ERRORDeliveryGroup'>">
+      <b>
+       Preferred Article Delivery Method
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="DeliveryGroup" name="DeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name='DeliveryGroup'>
+     </option>
+     <option>
+      Hold for Pickup
+     </option>
+     <option>
+      Mail to Address
+     </option>
+    </select>
+    <br/>
+   </label>
+   <label for="LoanDeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name='ERRORLoanDeliveryGroup'>">
+      <b>
+       Preferred Loan Delivery Method
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="DeliveryGroup" name="LoanDeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name='LoanDeliveryGroup'>
+     </option>
+     <option>
+      Hold for Pickup
+     </option>
+     <option>
+      Mail to Address
+     </option>
+    </select>
+    <br/>
+   </label>
+   <label for="WebDeliveryGroup">
+    <span class="field">
+     <span class="<#ERROR name='ERRORWebDeliveryGroup'>">
+      <b>
+       Preferred Electronic Delivery if Possible (PDF file via web)
+      </b>
+     </span>
+    </span>
+    <select class="f-name" id="WebDeliveryGroup" name="WebDeliveryGroup" size="1">
+     <option selected="">
+      <#PARAM name='WebDeliveryGroup'>
+     </option>
+     <option>
+      Yes
+     </option>
+     <option>
+      No
+     </option>
+    </select>
+    <br/>
+   </label>
+   <#include filename='include_notification_preferences.html'>
+ -->
+   <div class="fine-print">
+       <h4>Warning Concerning Copyright Restrictions</h4>
+<p>The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
+Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of "fair use", that user may be liable for copyright infringement.
+This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.</p>
+       <p><em>By registering to use Interlibrary Loan, you acknowledge and agree to the copyright terms and conditions outlined above.</em></p>
+       </div>
+       <br/>
+   <div align="right" class="f-submit-wrap">
+    <input class="f-submit" name="SubmitButton" type="submit" value="Submit Information"/>
+    <input class="f-submit" name="ResetButton" type="reset" value="Clear Form"/>
+    <input class="f-submit" name="SubmitButton" type="submit" value="Cancel - Exit ILLiad System"/>
+   </div>
+  </fieldset>
  </form>
- <div id="footer">
-  Copyright © 2011
-  <a href="http://www.atlas-sys.com">
-   Atlas Systems, Inc.
-  </a>
-  All Rights Reserved.
- </div>
+      <a id="research-assistants" name="research-assistants"></a>   
+     <h4>Important Information for Research Assistants</h4>
+<p>In order to submit interlibrary loan requests on behalf of a faculty or staff member, you must first fill out and submit a <a href="https://www.smith.edu/libraries/services/faculty/research-assistants">Research Assistant Proxy Library Card</a> application. Once you receive your Research Assistant Proxy Library Card, you may complete the user registration above. Note the following:</p>
+<ul>
+    <li>Indicate the faculty or staff member's name in the <b>First Name</b> and <b>Last Name</b> boxes.</li>
+    <li>Provide your full name in the <b>Research Assistant Name</b> box.</li>
+    <li>For the <b>Smith OneCard Number</b>, enter the 15-digit barcode number on your Research Assistant Proxy Library Card.</li>
+    <li>For <b>Status</b>, choose "faculty" (or "staff" if you work for a staff member) and indicate the faculty member's department.</li>
+    <li>For <b>Smith Email Address</b>, provide the faculty/staff member's email address. (All notifications will be sent to the faculty/staff member.)</li>
+      </ul>
+ <#INCLUDE filename='include_footer.html'>
 </div>
 
           <!-- / MAIN CONTENT AREA -->
