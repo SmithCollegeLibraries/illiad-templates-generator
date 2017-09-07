@@ -56,6 +56,21 @@
     <input class="f-name" id="LastName" name="LastName" size="40" type="text" value="<#PARAM name='LastName'>"/>
     <br/>
    </label>
+      <label for="AuthorizedUsers">
+    <span class="field">
+     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
+      <b>
+       Research Assistant Name
+      </b>
+     </span>
+     <br/>
+     <span class="note">
+      If registering as a Research Assistant, enter your name (<a href="#research-assistants">See Below</a>).
+     </span>
+    </span>
+    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
+    <br/>
+   </label>
    <label for="SSN">
     <span class="field">
      <span class="req">
@@ -67,8 +82,9 @@
       </b>
      </span>
         <br/>
-     <span class="note">99 number on the front of your OneCard. 
-Research assistants--use proxy card barcode (See Below).</span>
+     <span class="note">Enter the 99 number on the front of your OneCard. 
+         <br/>
+         If registering as a Research Assistant, enter the barcode number on your Proxy Library Card (<a href="#research-assistants">See Below</a>).</span>
     </span>
     <input class="f-name" id="SSN" name="SSN" size="40" type="text" value="<#PARAM name='SSN'>"/>
     <br/>
@@ -276,21 +292,6 @@ Research assistants--use proxy card barcode (See Below).</span>
     </select>
     <br/>
    </label>
-   <label for="AuthorizedUsers">
-    <span class="field">
-     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
-      <b>
-       Research Assistant Name
-      </b>
-     </span>
-     <br/>
-     <span class="note">
-      For Research Assistant use only - list the full names of anyone you wish to be allowed to pick up your ILL items.
-     </span>
-    </span>
-    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
-    <br/>
-   </label>
    <label for="NVTGC">
     <span class="field">
      <span class="<#ERROR name='ERRORNVTGC'>">
@@ -439,13 +440,13 @@ This institution reserves the right to refuse to accept a copying order if, in i
  </form>
       <a id="research-assistants" name="research-assistants"></a>   
      <h4>Important Information for Research Assistants</h4>
-<p>In order to submit interlibrary loan requests on behalf of a faculty or staff member, you must first fill out and submit a "Research Assistant Proxy Library Card" application. Once you receive your Research Assistant Proxy Library Card, you may complete the user registration above. Note the following:</p>
+<p>In order to submit interlibrary loan requests on behalf of a faculty or staff member, you must first fill out and submit a <a href="https://www.smith.edu/libraries/services/faculty/research-assistants">Research Assistant Proxy Library Card</a> application. Once you receive your Research Assistant Proxy Library Card, you may complete the user registration above. Note the following:</p>
 <ul>
-    <li>Indicate the faculty or staff member's name in the first two boxes.</li>
-    <li>Provide your full name in the fourth box.</li>
-    <li>For barcode, provide the 15-digit number on your Research Assistant Proxy Library Card.</li>
-    <li>For status, choose "faculty" (or "staff" if you work for a staff member) and indicate the faculty member's department.</li>
-    <li>For e-mail address and mailing address, provide the faculty/staff member's address. (All notifications will be sent to the faculty/staff member.)</li>
+    <li>Indicate the faculty or staff member's name in the <b>First Name</b> and <b>Last Name</b> boxes.</li>
+    <li>Provide your full name in the <b>Research Assistant Name</b> box.</li>
+    <li>For the <b>Smith OneCard Number</b>, enter the 15-digit barcode number on your Research Assistant Proxy Library Card.</li>
+    <li>For <b>Status</b>, choose "faculty" (or "staff" if you work for a staff member) and indicate the faculty member's department.</li>
+    <li>For <b>Smith Email Address</b>, provide the faculty/staff member's email address. (All notifications will be sent to the faculty/staff member.)</li>
       </ul>
  <#INCLUDE filename='include_footer.html'>
 </div>
