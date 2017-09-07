@@ -4,7 +4,6 @@ LEGAL
 Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 */
 #illiad-content {
-  /* LINKS */
   /* FORMS */
   /* FORMS - general classes */
   /* FORMS - f-wrap-1 - simple form, headings on left, form elements on right */
@@ -65,24 +64,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content .notificationPreferences table td {
   font: 83%/1.5 arial, tahoma, verdana, sans-serif;
-}
-#illiad-content a,
-#illiad-content a:link,
-#illiad-content a:link,
-#illiad-content a:link,
-#illiad-content a:hover {
-  background: transparent;
-  text-decoration: none;
-  color: #666666;
-  cursor: pointer;
-}
-#illiad-content a:link,
-#illiad-content a:visited {
-  color: #666666;
-}
-#illiad-content a:hover,
-#illiad-content a:active {
-  color: #069;
 }
 #illiad-content form {
   margin: 0 0 1.5em;
