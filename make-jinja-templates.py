@@ -39,7 +39,8 @@ for inputFilePathName in glob.glob(inputPath + '/' + "*.html"):
     logging.info('Processing %s' % inputFileName)
     with open(inputFilePathName) as fp:
         template = fp.read()
-        template = re.sub("name\=\"(.*?)\"", r"""name='\1'""", template, flags=re.DOTALL)
+        # If an ASP tag is between quotes, replace the double quotes in it with single quotes so that HTML parses correctly in BeautifulSoup
+        template = re.sub('(?<=\"\<\#)(.*?)(?=\>\")', lambda x:x.group(0).replace('"',"'"), template)
         soup = BeautifulSoup(template, "html5lib")
         contents = soup.select("div#content")
         try:
