@@ -13,18 +13,18 @@
         <div id="status"><#STATUS></div>
           <!-- MAIN CONTENT AREA -->
 <div>
- <a 2"="" absolutepath="false" href="<#ACTION action=" includesessionid="false" type="41" value="RSSID" valuetype="lookup">
-  ">Subscribe to Notifications Feed
+ <a href="<#ACTION action='2' type='41' value='RSSID' valueType='lookup' absolutePath='false' includeSessionID='false'>">
+  Subscribe to Notifications Feed
  </a>
  <br/>
  <div class="default-table">
-  <#TABLE name='ViewEmailNotifications' headerText="Email Notifications" maxRows="20" noDataAction="ShowMessageRow" noDataMessage="No Email Notifications">
+  <#TABLE name="ViewEmailNotifications" headerText="Email Notifications" maxRows="20" noDataAction="ShowMessageRow" noDataMessage="No Email Notifications">
  </div>
  <br/>
  <div class="default-table">
-  <#TABLE name='ViewSMSNotifications' headerText="SMS Notifications" maxRows="20" noDataAction="ShowMessageRow" noDataMessage="No SMS Notifications">
+  <#TABLE name="ViewSMSNotifications" headerText="SMS Notifications" maxRows="20" noDataAction="ShowMessageRow" noDataMessage="No SMS Notifications">
  </div>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->
