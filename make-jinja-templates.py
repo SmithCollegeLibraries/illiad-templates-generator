@@ -58,7 +58,7 @@ for inputFilePathName in glob.glob(inputPath + '/' + "*.html"):
 
         # Write full page template
         content_text = content.prettify(formatter=None)
-        outputFilePath = outputPath + '/' + intputFileName
+        outputFilePath = outputPath + '/' + inputFileName
         logging.info('Writing %s' % outputFilePath)
         with open(outputFilePath, "w") as f:
             f.write(topWithTitle)
