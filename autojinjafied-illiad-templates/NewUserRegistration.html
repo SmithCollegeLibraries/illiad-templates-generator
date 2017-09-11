@@ -158,7 +158,7 @@
      </span>
     </span>
     <select class="f-name" id="State" name="State" size="1">
-     <#OPTION name='custom' groupname='State' selectedValue="<#PARAM name=State>" defaultValue="" defaultName="" />
+     <#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=State>" defaultValue="" defaultName="" />
     </select>
     <br/>
    </label>
@@ -218,7 +218,7 @@
      </span>
     </span>
     <select class="f-name" id="SState" name="SState" size="1">
-     <#OPTION name='custom' groupname='State' selectedValue="<#PARAM name=SState>" defaultValue="" defaultName="" />
+     <#OPTION name="custom" groupname="State" selectedValue="<#PARAM name=SState>" defaultValue="" defaultName="" />
     </select>
     <br/>
    </label>
@@ -245,7 +245,7 @@
      </span>
     </span>
     <select class="f-name" id="StatusGroup" name="StatusGroup" size="1">
-     <#OPTION name='custom' groupname='StatusGroup' selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
+     <#OPTION name="custom" groupname="StatusGroup" selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
     </select>
     <br/>
    </label>
@@ -261,7 +261,7 @@
      </span>
     </span>
     <select class="f-name" id="Department" name="Department" size="1">
-     <#OPTION name='custom' groupname='Department' selectedValue="<#PARAM name=Department>" defaultValue="" defaultName=""/>
+     <#OPTION name="custom" groupname="Department" selectedValue="<#PARAM name=Department>" defaultValue="" defaultName=""/>
     </select>
     <br/>
    </label>
@@ -279,7 +279,7 @@
       An ID will be REQUIRED to pick items up.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
+    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name="AuthorizedUsers"></textarea>
     <br/>
    </label>
    <label for="NVTGC">
@@ -291,7 +291,7 @@
      </span>
     </span>
     <select class="f-name" id="NVTGC" name="NVTGC" size="1">
-     <#OPTION name='custom' groupname='NVTGC' selectedValue="<#PARAM name=NVTGC>" defaultValue="" defaultName=""/>
+     <#OPTION name="custom" groupname="NVTGC" selectedValue="<#PARAM name=NVTGC>" defaultValue="" defaultName=""/>
     </select>
     <br/>
    </label>
@@ -359,7 +359,7 @@
     </span>
     <select class="f-name" id="DeliveryGroup" name="DeliveryGroup" size="1">
      <option selected="">
-      <#PARAM name='DeliveryGroup'>
+      <#PARAM name="DeliveryGroup">
      </option>
      <option>
       Hold for Pickup
@@ -380,7 +380,7 @@
     </span>
     <select class="f-name" id="DeliveryGroup" name="LoanDeliveryGroup" size="1">
      <option selected="">
-      <#PARAM name='LoanDeliveryGroup'>
+      <#PARAM name="LoanDeliveryGroup">
      </option>
      <option>
       Hold for Pickup
@@ -401,7 +401,7 @@
     </span>
     <select class="f-name" id="WebDeliveryGroup" name="WebDeliveryGroup" size="1">
      <option selected="">
-      <#PARAM name='WebDeliveryGroup'>
+      <#PARAM name="WebDeliveryGroup">
      </option>
      <option>
       Yes
@@ -412,7 +412,7 @@
     </select>
     <br/>
    </label>
-   <#include filename='include_notification_preferences.html'>
+   <#include filename="include_notification_preferences.html">
    <br/>
    <div align="right" class="f-submit-wrap">
     <input class="f-submit" name="SubmitButton" type="submit" value="Submit Information"/>
@@ -421,7 +421,7 @@
    </div>
   </fieldset>
  </form>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->
