@@ -36,3 +36,16 @@ lessc css/main.less rendered-illiad-templates/css/main.css && lessc css/custom.l
 ```
 cp -r rendered-illiad-templates/* illiad-ftp-folder-webtest/
 ```
+
+## Updating make-jinja-templates.py
+
+Because jinjafied-illiad-templates is a hand edited folder we don't want to wipe those changes out with the auto-generated templates. Making a programmatic change to jinja templates requires regenerating the templates then creating a diff and then applying that diff to the jinjafied-illiad-templates folder.
+
+```
+edit make-jinja-templates.py
+git commit -a -m "Change to jinja template generation code"
+python3 make-jinja-templates.py
+git diff > mydiff
+patch -p2 -d jinjafied-illiad-templates/ < mydiff
+# resolve any rejections
+```
