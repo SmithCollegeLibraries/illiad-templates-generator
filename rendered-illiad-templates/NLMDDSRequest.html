@@ -268,7 +268,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
     </span>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name='ValidAccounts'>
+     <#OPTION name="ValidAccounts">
     </select>
     <br/>
    </label>
@@ -284,18 +284,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Put any information here that may help us find these items, as well as any other pertinent information.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
     <br/>
    </label>
    <h2>
     Requests
    </h2>
-   <#PARAM name='NLMDDSRequests'>
+   <#PARAM name="NLMDDSRequests">
 					               
-                    <#INCLUDE filename='include_request_buttons.html'>
+                    <#INCLUDE filename="include_request_buttons.html">
   </fieldset>
  </form>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->

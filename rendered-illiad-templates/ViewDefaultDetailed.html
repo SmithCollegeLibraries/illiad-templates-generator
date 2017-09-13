@@ -14,7 +14,7 @@
   <link href="https://www.smith.edu/libraries/" rel="shortlink"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <title>
-   Transaction <#PARAM name='TransactionNumber'> - Interlibrary Loan, Smith College Libraries
+   Transaction <#PARAM name="TransactionNumber"> - Interlibrary Loan, Smith College Libraries
   </title>
   <meta content="width" name="MobileOptimized"/>
   <meta content="true" name="HandheldFriendly"/>
@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <h2 class="element-invisible">
       You are here
      </h2>
-      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">Transaction <#PARAM name='TransactionNumber'></li></ol>
+      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">Transaction <#PARAM name="TransactionNumber"></li></ol>
     </div>
    </nav>
    <div class="home-container tier-container" id="main" role="main">
@@ -239,28 +239,28 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Template file: ViewDefaultDetailed.html -->
 <div id="wrap">
     <#INCLUDE filename="include_header.html">
-    <h1>Transaction <#PARAM name='TransactionNumber'></h1>
+    <h1>Transaction <#PARAM name="TransactionNumber"></h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
         <div id="status"><#STATUS></div>
           <!-- MAIN CONTENT AREA -->
 <div>
- <#MENU name='transaction' separator="|">
+ <#MENU name="transaction" separator="|">
  <div class="default-table">
-  <#TABLE name='DetailedInformation' headerText="Transaction Information" hideColumnHeaders="true">
+  <#TABLE name="DetailedInformation" headerText="Transaction Information" hideColumnHeaders="true">
   <br/>
  </div>
  <div class="default-table">
-  <#TABLE name='NotesInformation' headerText="Notes" noDataAction="ShowMessageRow" noDataMessage="No Notes" column="NoteDate:Date/Time" column="AddedBy:Added By" column="Note">
+  <#TABLE name="NotesInformation" headerText="Notes" noDataAction="ShowMessageRow" noDataMessage="No Notes" column="NoteDate:Date/Time" column="AddedBy:Added By" column="Note">
   <br/>
  </div>
  <div class="default-table">
-  <#TABLE name='TrackingInformation' headerText="Tracking" noDataAction="ShowMessageRow" noDataMessage="No Tracking" 
+  <#TABLE name="TrackingInformation" headerText="Tracking" noDataAction="ShowMessageRow" noDataMessage="No Tracking" 
              column="DateTime:Date/Time" column="ChangedTo:Status" column="ChangedBy:Changed By">
   <br/>
  </div>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->

@@ -262,7 +262,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Describe the item you want
    </h2>
    <label for="LoanAuthor">
-    <#ERROR name='ERRORLoanAuthor'>
+    <#ERROR name="ERRORLoanAuthor">
     <b>
      Author/Editors
     </b>
@@ -270,7 +270,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="LoanTitle">
-    <#ERROR name='ERRORLoanTitle'>
+    <#ERROR name="ERRORLoanTitle">
     <b>
      Title
      <br/>
@@ -278,11 +278,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Please do not abbreviate unless your citation is abbreviated
      </span>
     </b>
-    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name='LoanTitle'></textarea>
+    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name="LoanTitle"></textarea>
     <br/>
    </label>
    <label for="LoanPublisher">
-    <#ERROR name='ERRORLoanPublisher'>
+    <#ERROR name="ERRORLoanPublisher">
     <b>
      Publisher
     </b>
@@ -290,7 +290,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="LoanPlace">
-    <#ERROR name='ERRORLoanPlace'>
+    <#ERROR name="ERRORLoanPlace">
     <b>
      Place of Publication
     </b>
@@ -298,7 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="LoanDate">
-    <#ERROR name='ERRORLoanDate'>
+    <#ERROR name="ERRORLoanDate">
     <b>
      Date of Publication
     </b>
@@ -306,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="LoanEdition">
-    <#ERROR name='ERRORLoanEdition'>
+    <#ERROR name="ERRORLoanEdition">
     <b>
      Edition
     </b>
@@ -314,7 +314,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="ISSN">
-    <#ERROR name='ERRORISSN'>
+    <#ERROR name="ERRORISSN">
     <b>
      ISBN (International Standard Book Number)
      <br/>
@@ -326,7 +326,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="CallNumber">
-    <#ERROR name='ERRORCallNumber'>
+    <#ERROR name="ERRORCallNumber">
     <b>
      Call Number
     </b>
@@ -334,7 +334,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="ESPNumber">
-    <#ERROR name='ERRORESPNumber'>
+    <#ERROR name="ERRORESPNumber">
     <b>
      OCLC or Docline UI Number
     </b>
@@ -342,7 +342,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="NotWantedAfter">
-    <#ERROR name='ERRORNotWantedAfter'>
+    <#ERROR name="ERRORNotWantedAfter">
     <b>
      Not Wanted After Date
      <span class="note">
@@ -353,7 +353,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="AcceptNonEnglish">
-    <#ERROR name='ERRORAcceptNonEnglish'>
+    <#ERROR name="ERRORAcceptNonEnglish">
     <b>
      Will you accept the item in a language other than English?
      <br/>
@@ -363,7 +363,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </b>
     <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
      <option selected="">
-      <#PARAM name='AcceptNonEnglish'>
+      <#PARAM name="AcceptNonEnglish">
      </option>
      <option>
       No
@@ -375,13 +375,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="AcceptAlternateEdition">
-    <#ERROR name='ERRORAcceptAlternateEdition'>
+    <#ERROR name="ERRORAcceptAlternateEdition">
     <b>
      Will you accept an alternate edition of this item?
     </b>
     <select class="f-name" id="AcceptAlternateEdition" name="AcceptAlternateEdition" size="1">
      <option selected="">
-      <#PARAM name='AcceptAlternateEdition'>
+      <#PARAM name="AcceptAlternateEdition">
      </option>
      <option>
       No
@@ -393,17 +393,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <br/>
    </label>
    <label for="AccountNo">
-    <#ERROR name='ERRORAccountNo'>
+    <#ERROR name="ERRORAccountNo">
     <b>
      Account Number
     </b>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name='ValidAccounts'>
+     <#OPTION name="ValidAccounts">
     </select>
     <br/>
    </label>
    <label for="Notes">
-    <#ERROR name='ERRORNotes'>
+    <#ERROR name="ERRORNotes">
     <b>
      Notes
      <br/>
@@ -411,14 +411,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Put any information here that may help us find the item, as well as any other pertinent information.
      </span>
     </b>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
     <br/>
    </label>
-   <#INCLUDE filename='include_request_cited.html'>                
-                    <#INCLUDE filename='include_request_buttons.html'>
+   <#INCLUDE filename="include_request_cited.html">                
+                    <#INCLUDE filename="include_request_buttons.html">
   </fieldset>
  </form>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->

@@ -281,7 +281,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Please do not abbreviate unless your citation is abbreviated
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name='LoanTitle'></textarea>
+    <textarea class="f-name" cols="40" id="LoanTitle" name="LoanTitle" rows="2"><#PARAM name="LoanTitle"></textarea>
     <br/>
    </label>
    <label for="LoanAuthor">
@@ -382,7 +382,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     </span>
     <select class="f-name" id="AcceptNonEnglish" name="AcceptNonEnglish" size="1">
      <option selected="">
-      <#PARAM name='AcceptNonEnglish'>
+      <#PARAM name="AcceptNonEnglish">
      </option>
      <option>
       No
@@ -402,7 +402,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
     </span>
     <select class="f-name" id="AccountNo" name="AccountNo" size="1">
-     <#OPTION name='ValidAccounts'>
+     <#OPTION name="ValidAccounts">
     </select>
     <br/>
    </label>
@@ -418,14 +418,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       Put any information here that may help us find the item, as well as any other pertinent information.
      </span>
     </span>
-    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name='Notes'></textarea>
+    <textarea class="f-name" cols="40" id="Notes" name="Notes" rows="2"><#PARAM name="Notes"></textarea>
     <br/>
    </label>
-   <#INCLUDE filename='include_request_cited.html'>                
-                    <#INCLUDE filename='include_request_buttons.html'>
+   <#INCLUDE filename="include_request_cited.html">                
+                    <#INCLUDE filename="include_request_buttons.html">
   </fieldset>
  </form>
- <#INCLUDE filename='include_footer.html'>
+ <#INCLUDE filename="include_footer.html">
 </div>
 
           <!-- / MAIN CONTENT AREA -->
