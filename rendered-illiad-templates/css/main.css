@@ -807,16 +807,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   top: -102px;
   right: 0;
 }
-#illiad-content #wrap {
-  min-width: 770px;
-  max-width: 1200px;
-  margin: 0 auto;
-  position: relative;
-}
-#illiad-content #content-wrap {
-  position: relative;
-  width: 100%;
-}
 #illiad-content #utility {
   position: absolute;
   top: 0;
