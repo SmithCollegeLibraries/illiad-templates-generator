@@ -16,8 +16,6 @@ top = """
 {% block content %}
 <!-- Template file: {{ templateFilename }} -->
 <div id="wrap">
-    <#INCLUDE filename="include_header.html">
-    <h1>{{ self.title() }}</h1>
     <div id="content-wrap">
         <#INCLUDE filename="include_menu.html">
         <div class="col-sm-10">
