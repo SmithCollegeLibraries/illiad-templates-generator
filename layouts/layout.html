@@ -234,6 +234,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <!-- MAIN CONTENT AREA -->
       <div class="container {{ templateName }}" id="illiad-content">
         <div class="row">
+          <div class="col-sm-12">
+            <h1>{{ self.title() }}</h1>
+            <#INCLUDE filename="include_header.html">
+          </div>
           {% block content %}{% endblock %}
         </div>
       </div>
