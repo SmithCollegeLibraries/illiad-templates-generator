@@ -69,7 +69,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   margin: 0 0 1.5em;
 }
 #illiad-content input {
-  font-family: arial, tahoma, verdana, sans-serif;
   margin: 2px 0;
 }
 #illiad-content fieldset {
@@ -102,7 +101,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-1 h3 {
   margin: 0 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-1 label {
@@ -242,7 +241,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-2 h3 {
   margin: 0 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-2 label {
@@ -374,12 +373,12 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-request h3 {
   margin: 0 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-request h2 {
   margin: .6em 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-request label {
@@ -541,12 +540,12 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-detail h3 {
   margin: 0 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-detail h2 {
   margin: .6em 0 .6em;
-  font: bold 155% arial;
+  font: bold 155%;
   color: #003e51;
 }
 #illiad-content form.f-wrap-detail label {
@@ -696,7 +695,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   font-size: 11px;
 }
 #illiad-content .date {
-  font: bold 82% arial;
+  font: bold 82%;
   color: #bbb;
   display: block;
   letter-spacing: 1px;
@@ -742,7 +741,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   padding: 6px 0 0 2px;
 }
 #illiad-content #header #site-name {
-  font: 265% arial;
+  font: 265%;
   letter-spacing: -0.05em;
   margin: 0px 0 0 40px;
   padding: 3px;
@@ -750,7 +749,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   border: none;
 }
 #illiad-content #header #title-name {
-  font: 265% arial;
+  font: 265%;
   letter-spacing: -0.05em;
   margin: 0px 0 0 40px;
   padding: 3px;
@@ -1313,7 +1312,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   background-repeat: no-repeat;
 }
 #illiad-content #status {
-  font: Arial, Helvetica, sans-serif;
   margin: 0px 0 0 40px;
   padding: 3px;
   color: #333333;
