@@ -52,6 +52,11 @@ for inputFilePathName in glob.glob(inputPath + '/' + "*.html"):
         topTemplate = Template(top)
         topWithTitle = topTemplate.substitute({'title': title})
 
+        # Bootstrapify submit buttons
+        submitButtons = content.find_all("input", type="submit")
+        for submitButton in submitButtons:
+            submitButton['class']="btn btn-primary"
+        
         # Remove #content id from the wrapper div
         del content['id']
 
