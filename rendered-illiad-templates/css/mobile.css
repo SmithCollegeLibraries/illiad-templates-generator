@@ -136,8 +136,8 @@
   #nav a:visited,
   #nav a:hover,
   #nav a:active {
-    border-top: 1px solid #999;
     font-size: 1.2em;
+    margin-bottom: 1em;
   }
   #nav a:hover {
     color: #c00;
