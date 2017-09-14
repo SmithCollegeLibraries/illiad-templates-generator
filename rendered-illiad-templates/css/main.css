@@ -399,7 +399,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-request label b {
   float: left;
-  width: 60%;
+  width: 100%;
   line-height: 1.7;
   display: block;
   position: relative;
@@ -422,7 +422,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-request label .field {
   float: left;
-  width: 60%;
+  width: 100%;
   line-height: 1.7;
   display: block;
   position: relative;
@@ -566,7 +566,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
 }
 #illiad-content form.f-wrap-detail label b {
   float: left;
-  width: 60%;
+  width: 100%;
   line-height: 1.7;
   display: block;
   position: relative;
