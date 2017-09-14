@@ -1061,6 +1061,7 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   margin: 0;
   padding: 0;
   background: #fff;
+  margin-bottom: .5em !important;
 }
 #illiad-content #nav {
   padding-top: 0;
@@ -1071,7 +1072,6 @@ Copyright � 2015 Atlas Systems, Inc. All rights reserved.
   line-height: 1.8;
   padding: 5px 0 5px 23px;
   background: #fff url("images/sprites.gif") no-repeat 10px -695px;
-  font: bold 96% arial;
   display: block;
 }
 #illiad-content #nav a,
