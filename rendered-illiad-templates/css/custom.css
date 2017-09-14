@@ -42,11 +42,13 @@
 #illiad-content table {
   margin-bottom: 1.5em;
 }
-#illiad-content #content-wrap > div:first-child {
-  padding-left: 0;
-}
-#illiad-content #content-wrap > div:last-child {
-  padding-right: 0;
+@media (min-width: 768px) {
+  #illiad-content #content-wrap > div:first-child {
+    padding-left: 0;
+  }
+  #illiad-content #content-wrap > div:last-child {
+    padding-right: 0;
+  }
 }
 #illiad-content #library-help {
   padding: 1em;
