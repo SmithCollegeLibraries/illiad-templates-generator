@@ -67,8 +67,3 @@
   font-size: 80%;
   margin-top: 1.5em;
 }
-/* Hide clone button on renew checked out items detail page */
-.ViewRenewCheckedOutDetailedInformation #transactionMenu .menuClone,
-.ViewRenewCheckedOutDetailedInformation #transactionMenu .menuSeparator {
-  display: none;
-}
