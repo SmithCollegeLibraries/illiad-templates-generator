@@ -33,7 +33,7 @@ bash compile-css.sh
 ```
 
 ## Deployment
-Copy the rendered files to the ftp folder. At the time of writing both folders are under version control.
+Copy the rendered files to the ftp folder, commit them, and then deploy to the server.
 ```
 # Deploy to staging environment
 cp -r rendered-illiad-templates/* ../illiad-folder/
