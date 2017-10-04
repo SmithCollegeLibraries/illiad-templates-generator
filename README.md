@@ -33,12 +33,19 @@ bash compile-css.sh
 ```
 
 ## Deployment
-Copy the rendered files to the ftp folder. At the time of writing both folders are under version control.
+Copy the rendered files to the ftp folder, commit them, and then deploy to the server.
 ```
 # Deploy to staging environment
-cp -r rendered-illiad-templates/* illiad-ftp-folder-webtest/
+cp -r rendered-illiad-templates/* ../illiad-folder/
+cd ../illiad-folder/
+(commit changes)
+git ftp push -s testweb
+
 # Deploy to production environment
 cp -r rendered-illiad-templates/* ../illiad-folder/
+cd ../illiad-folder/
+(commit changes)
+git ftp push -s prod
 ```
 
 ## Updating make-jinja-templates.py
