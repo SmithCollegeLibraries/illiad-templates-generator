@@ -25,7 +25,7 @@
     {{ self.title() }}
    </h2>
       <h3>Important Information for Research Assistants</h3>
-      <p>Please read <a href="#research-assistants">Information for Research Assistants</a> at the bottom of this page before filling out this form.</p>
+      <p>If registering as a Faculty Research Assistant, please use the <a href="https://smithcollege-illiad-oclc-org.libproxy.smith.edu/illiad/illiad.dll?Action=10&Form=79">New User Registration Form</a>.</p>
    <label for="FirstName">
     <span class="field">
      <span class="req">
@@ -54,21 +54,6 @@
     <input class="f-name" id="LastName" name="LastName" size="40" type="text" value="<#PARAM name='LastName'>"/>
     <br/>
    </label>
-      <label for="AuthorizedUsers">
-    <span class="field">
-     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
-      <b>
-       Research Assistant Name
-      </b>
-     </span>
-     <br/>
-     <span class="note">
-      If registering as a Research Assistant, enter your name (<a href="#research-assistants">See Below</a> for more information).
-     </span>
-    </span>
-    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name='AuthorizedUsers'></textarea>
-    <br/>
-   </label>
    <label for="SSN">
     <span class="field">
      <span class="req">
@@ -80,9 +65,7 @@
       </b>
      </span>
         <br/>
-     <span class="note">Enter the 99 number on the front of your OneCard. 
-         <br/>
-         If registering as a Research Assistant, enter the barcode number on your Proxy Library Card (<a href="#research-assistants">See Below</a> for more information).</span>
+     <span class="note">Enter the 99 number on the front of your OneCard.</span>
     </span>
     <input class="f-name" id="SSN" name="SSN" size="40" type="text" value="<#PARAM name='SSN'>"/>
     <br/>
@@ -378,16 +361,6 @@ This institution reserves the right to refuse to accept a copying order if, in i
    </div>
   </fieldset>
  </form>
-      <a id="research-assistants" name="research-assistants"></a>   
-     <h3>Important Information for Research Assistants</h3>
-<p>In order to submit interlibrary loan requests on behalf of a faculty or staff member, you must first fill out and submit a <a href="https://www.smith.edu/libraries/services/faculty/research-assistants">Research Assistant Proxy Library Card</a> application. Once you receive your Research Assistant Proxy Library Card, you may complete the user registration above. Note the following:</p>
-<ul>
-    <li>Indicate the faculty or staff member's name in the <b>First Name</b> and <b>Last Name</b> boxes.</li>
-    <li>Provide your full name in the <b>Research Assistant Name</b> box.</li>
-    <li>For the <b>Smith OneCard Number</b>, enter the 15-digit barcode number on your Research Assistant Proxy Library Card.</li>
-    <li>For <b>Status</b>, choose "faculty" (or "staff" if you work for a staff member) and indicate the faculty member's department.</li>
-    <li>For <b>Smith Email Address</b>, provide the faculty/staff member's email address. (All notifications will be sent to the faculty/staff member.)</li>
-      </ul>
  <#INCLUDE filename="include_footer.html">
 </div>
 
