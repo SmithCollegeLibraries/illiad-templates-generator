@@ -14,7 +14,7 @@
   <link href="https://www.smith.edu/libraries/" rel="shortlink"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <title>
-   New Authenticated User Registration - Interlibrary Loan, Smith College Libraries
+   New Smith User Registration - Interlibrary Loan, Smith College Libraries
   </title>
   <meta content="width" name="MobileOptimized"/>
   <meta content="true" name="HandheldFriendly"/>
@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <h2 class="element-invisible">
       You are here
      </h2>
-      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">New Authenticated User Registration</li></ol>
+      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">New Smith User Registration</li></ol>
     </div>
    </nav>
    <div class="home-container tier-container" id="main" role="main">
@@ -236,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container NewAuthRegistration" id="illiad-content">
         <div class="row">
           <div class="col-sm-12">
-            <h1>New Authenticated User Registration</h1>
+            <h1>New Smith User Registration</h1>
             <!-- <#INCLUDE filename="include_header.html"> -->
           </div>
           
@@ -258,9 +258,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    Indicates required field
   </div>
   <fieldset>
-   <h3>
-    Change Personal Information
-   </h3>
+  <h2>
+    New Smith User Registration
+   </h2>
+      <h3>Important Information for Research Assistants</h3>
+      <p>If registering as a Faculty Research Assistant, please use the <a href="https://smithcollege-illiad-oclc-org.libproxy.smith.edu/illiad/illiad.dll?Action=10&Form=79">New User Registration Form</a>.</p>
    <label for="FirstName">
     <span class="field">
      <span class="req">
@@ -296,9 +298,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
      <span class="<#ERROR name='ERRORSSN'>">
       <b>
-       ID Number
+       Smith OneCard Number
       </b>
      </span>
+        <br/>
+     <span class="note">Enter the 99 number on the front of your OneCard.</span>
     </span>
     <input class="f-name" id="SSN" name="SSN" size="40" type="text" value="<#PARAM name='SSN'>"/>
     <br/>
@@ -310,9 +314,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
      <span class="<#ERROR name='ERROREMailAddress'>">
       <b>
-       E-Mail Address
+       Smith Email Address
       </b>
      </span>
+        <br/>
+     <span class="note">Notices are sent to @smith.edu addresses only.</span>
     </span>
     <input class="f-name" id="EMailAddress" name="EMailAddress" size="40" type="text" value="<#PARAM name='EMailAddress'>"/>
     <br/>
@@ -331,9 +337,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input class="f-name" id="Phone" name="Phone" size="40" type="text" value="<#PARAM name='Phone'>"/>
     <br/>
    </label>
+   <!-- Hide unused fields
    <label for="MobilePhone">
     <span class="field">
-     <span class="<#ERROR name=' errormobilephone'>">
+     <span class="<#ERROR name='ERRORMobilePhone'>">
       <b>
        Mobile Phone
       </b>
@@ -342,27 +349,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input class="f-name" id="MobilePhone" name="MobilePhone" size="40" type="text" value="<#PARAM name='MobilePhone'>"/>
     <br/>
    </label>
-   <label for="WebDeliveryGroup">
-    <span class="field">
-     <span class="<#ERROR name='ERRORWebDeliveryGroup'>">
-      <b>
-       Preferred Electronic Delivery if Possible (PDF file via web)
-      </b>
-     </span>
-    </span>
-    <select class="f-name" id="WebDeliveryGroup" name="WebDeliveryGroup" size="1">
-     <option selected="">
-      <#PARAM name="WebDeliveryGroup">
-     </option>
-     <option>
-      Yes
-     </option>
-     <option>
-      No
-     </option>
-    </select>
-    <br/>
-   </label>
+ -->
    <label for="Address">
     <span class="field">
      <span class="req">
@@ -432,6 +419,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input class="f-name" id="Zip" name="Zip" size="40" type="text" value="<#PARAM name='Zip'>"/>
     <br/>
    </label>
+   <!-- Hide unused fields
    <label for="SAddress">
     <span class="field">
      <span class="<#ERROR name='ERRORSAddress'>">
@@ -489,6 +477,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <input class="f-name" id="SZip" name="SZip" size="40" type="text" value="<#PARAM name='SZip'>"/>
     <br/>
    </label>
+ -->
    <label for="StatusGroup">
     <span class="field">
      <span class="req">
@@ -501,7 +490,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
     </span>
     <select class="f-name" id="StatusGroup" name="StatusGroup" size="1">
-     <#OPTION name="custom" groupname="StatusGroup" selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" />
+     <!-- <#OPTION name="custom" groupname="StatusGroup" selectedValue="<#PARAM name=StatusGroup>" defaultValue="" defaultName="" /> -->
+     <option>Faculty</option>
+     <option>Staff</option>
+     <option>SSW Grad Student</option>
+     <option>Grad Student--Other</option>
+     <option>2018 Undergrad</option>
+     <option>2019 Undergrad</option>
+     <option>2020 Undergrad</option>
+     <option>2021 Undergrad</option>
+     <option>Spouse/Partner</option>
+     <option>Other</option>
     </select>
     <br/>
    </label>
@@ -515,29 +514,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
        Department
       </b>
      </span>
+        <br/>
+      <span class="note">
+      For faculty only
+     </span>    
     </span>
     <select class="f-name" id="Department" name="Department" size="1">
-     <#OPTION name="custom" groupname="Department" selectedValue="<#PARAM name=Department>"  defaultValue="" defaultName=""/>
+      <!-- <#OPTION name="custom" groupname="Department" selectedValue="<#PARAM name=Department>" defaultValue="" defaultName=""/> -->
+      <option>Africana Studies</option>  
+      <option>American Studies</option>
+      <option>Anthropology</option>
+      <option>Art</option>
+      <option>Astronomy</option>
+      <option>Biochemistry</option>
+      <option>Biology</option>
+      <option>Classics</option>
+      <option>Comparative Literature</option>
+      <option>Computer Science</option>
+      <option>Dance</option>
+      <option>East Asian</option>
+      <option>Economics</option>
+      <option>Education</option>
+      <option>Engineering</option>
+      <option>English</option>
+      <option>Environmental Sciences</option>
+      <option>Exercise and Sport Studies</option>
+      <option>Film &amp; Media Studies</option>
+      <option>French</option>
+      <option>Geosciences</option>
+      <option>German</option>
+      <option>Government</option>
+      <option>History</option>
+      <option>Italian</option>
+      <option>Jewish Studies</option>
+      <option>Latin American Studies</option>
+      <option>Mathematics</option>
+      <option>Medieval Studies</option>
+      <option>Middle East Studies</option>
+      <option>Music</option>
+      <option>Neuroscience</option>
+      <option>Philosophy</option>
+      <option>Physics</option>
+      <option>Psychology</option>
+      <option>Religion</option>
+      <option>Russian</option>
+      <option>Social Work</option>
+      <option>Sociology</option>
+      <option>Spanish &amp; Portuguese</option>
+      <option>Statistical &amp; Data Sciences</option>
+      <option>Theatre</option>
+      <option>Women &amp; Gender Studies</option>
     </select>
     <br/>
    </label>
-   <label for="AuthorizedUsers">
-    <span class="field">
-     <span class="<#ERROR name='ERRORAuthorizedUsers'>">
-      <b>
-       Authorized Users
-      </b>
-     </span>
-     <br/>
-     <span class="note">
-      List the full names of anyone you wish to be allowed to pick up your ILL items.
-      <br/>
-      An ID will be REQUIRED to pick items up.
-     </span>
-    </span>
-    <textarea class="f-name" cols="40" id="AuthorizedUsers" name="AuthorizedUsers" rows="2"><#PARAM name="AuthorizedUsers"></textarea>
-    <br/>
-   </label>
+   <!-- Hide unused fields
    <label for="NVTGC">
     <span class="field">
      <span class="<#ERROR name='ERRORNVTGC'>">
@@ -547,60 +577,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      </span>
     </span>
     <select class="f-name" id="NVTGC" name="NVTGC" size="1">
-     <#OPTION name="custom" groupname="NVTGC" selectedValue="<#PARAM name=NVTGC>"  defaultValue="" defaultName=""/>
+     <#OPTION name="custom" groupname="NVTGC" selectedValue="<#PARAM name=NVTGC>" defaultValue="" defaultName=""/>
     </select>
     <br/>
    </label>
-   <label for="DeliveryGroup">
-    <span class="field">
-     <span class="<#ERROR name='ERRORDeliveryGroup'>">
-      <b>
-       Preferred Article Delivery Method
-      </b>
-     </span>
-    </span>
-    <select class="f-name" id="DeliveryGroup" name="DeliveryGroup" size="1">
-     <option selected="">
-      <#PARAM name="DeliveryGroup">
-     </option>
-     <option>
-      Hold for Pickup
-     </option>
-     <option>
-      Mail to Address
-     </option>
-    </select>
-    <br/>
-   </label>
-   <label for="LoanDeliveryGroup">
-    <span class="field">
-     <span class="<#ERROR name='ERRORLoanDeliveryGroup'>">
-      <b>
-       Preferred Loan Delivery Method
-      </b>
-     </span>
-    </span>
-    <select class="f-name" id="DeliveryGroup" name="LoanDeliveryGroup" size="1">
-     <option selected="">
-      <#PARAM name="LoanDeliveryGroup">
-     </option>
-     <option>
-      Hold for Pickup
-     </option>
-     <option>
-      Mail to Address
-     </option>
-    </select>
-    <br/>
-   </label>
-   <#include filename="include_notification_preferences.html">
-   <br/>
+<#include filename="include_notification_preferences.html">
+ -->
+  <div class="fine-print">
+       <h3>Warning Concerning Copyright Restrictions</h3>
+<p>The copyright law of the United States (Title 17, United States Code) governs the making of photocopies or other reproductions of copyrighted materials.
+Under certain conditions specified in the law, libraries and archives are authorized to furnish a photocopy or other reproduction. One of these specified conditions is that the photocopy or reproduction is not to be "used for any purpose other than private study, scholarship, or research". If a user makes a request for, or later uses, a photocopy or reproduction for purposes in excess of "fair use", that user may be liable for copyright infringement.
+This institution reserves the right to refuse to accept a copying order if, in its judgment, fulfillment of the order would involve violation of copyright law.</p>
+       <p><em>By registering to use Interlibrary Loan, you acknowledge and agree to the copyright terms and conditions outlined above.</em></p>
+       </div>
+       <br/>
    <div align="right" class="f-submit-wrap">
     <input class="btn btn-primary" name="SubmitButton" type="submit" value="Submit Information"/>
-    <input class="btn btn-primary" name="SubmitButton" type="submit" value="Cancel - Exit to Main Menu"/>
+    <input class="btn btn-submit" name="ResetButton" type="reset" value="Clear Form"/>
+    <input class="btn btn-primary" name="SubmitButton" type="submit" value="Cancel - Exit ILLiad System"/>
    </div>
   </fieldset>
-  <input id="BillingCategory" name="BillingCategory" type="hidden" value="<#PARAM name='BillingCategory'>"/>
  </form>
  <#INCLUDE filename="include_footer.html">
 </div>
