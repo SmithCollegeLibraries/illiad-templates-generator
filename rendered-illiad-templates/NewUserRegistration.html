@@ -14,7 +14,7 @@
   <link href="https://www.smith.edu/libraries/" rel="shortlink"/>
   <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
   <title>
-   New User Registration - Interlibrary Loan, Smith College Libraries
+   Interlibrary Loan - Interlibrary Loan, Smith College Libraries
   </title>
   <meta content="width" name="MobileOptimized"/>
   <meta content="true" name="HandheldFriendly"/>
@@ -143,7 +143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      <h2 class="element-invisible">
       You are here
      </h2>
-      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">New User Registration</li></ol>
+      <ol><li><a href="https://www.smith.edu/libraries/">Home</a></li><li><a href="https://www.smith.edu/libraries/services">Services</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials">Request Materials</a></li><li><a href="https://www.smith.edu/libraries/services/request-materials/interlibrary-loan">Interlibrary Loan</a></li><li><a href="/illiad/illiad.dll">My Requests</a></li><li class="breadcrumbcurrent">Interlibrary Loan</li></ol>
     </div>
    </nav>
    <div class="home-container tier-container" id="main" role="main">
@@ -236,7 +236,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       <div class="container NewUserRegistration" id="illiad-content">
         <div class="row">
           <div class="col-sm-12">
-            <h1>New User Registration</h1>
+            <h1>Interlibrary Loan</h1>
             <!-- <#INCLUDE filename="include_header.html"> -->
           </div>
           
@@ -244,10 +244,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div id="wrap">
     <div id="content-wrap">
         <div class="col-sm-12">
-          <div id="status"><#STATUS></div>
+          <div id="status" style="display: none;"><#STATUS></div>
           <!-- MAIN CONTENT AREA -->
 <div>
- <form action="illiad.dll" class="f-wrap-request" method="post" name="Registration">
+  <table border="0" cellspacing="0" cellpadding="0" class="smith-table-style-alt">
+<tbody>
+<tr>
+<td><strong><a href="https://login.libproxy.smith.edu/login?url=https://smithcollege.illiad.oclc.org/illiad/illiad.dll" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://login.libproxy.smith.edu/login?url%3Dhttps://smithcollege.illiad.oclc.org/illiad/illiad.dll&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNGv_SKSjabrHoDKQhx_HZoZMLeDoQ">Smith Login</a></strong></td>
+<td>Enter your Smith username and password.</td>
+</tr>
+<tr>
+<td><strong><a href="https://smithcollege.illiad.oclc.org/illiad/ra-login/logon.html" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://smithcollege.illiad.oclc.org/illiad/ra-login/logon.html&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNFFqXpWusEG6zSxvuyWsE2tD8EG3g">Research Assistants Login</a></strong></td>
+<td>Smith Faculty Research Assistants enter the username and password you created when registering.<br>Not registered? See&nbsp;<a href="https://www.smith.edu/libraries/services/faculty/research-assistants" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.smith.edu/libraries/services/faculty/research-assistants&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNFeCJ2dt564CYnmNnPjjZirvCuhXw">Faculty Research Assistants</a>.</td>
+</tr>
+</tbody>
+</table>
+ <form action="illiad.dll" class="f-wrap-request" method="post" name="Registration" style="display: none;">
   <input name="ILLiadForm" type="hidden" value="Registration"/>
   <#FORMSTATE>
   <div class="req">
@@ -258,7 +270,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   </div>
   <fieldset>
    <h2>
-    New User Registration
+    Interlibrary Loan
    </h2>
       <h3>Important Information for Research Assistants</h3>
       <p>Please read <a href="#research-assistants">Information for Research Assistants</a> at the bottom of this page before filling out this form.</p>
@@ -733,6 +745,7 @@ This institution reserves the right to refuse to accept a copying order if, in i
    </div>
   </fieldset>
  </form>
+<!--
       <a id="research-assistants" name="research-assistants"></a>   
      <h3>Important Information for Research Assistants</h3>
 <p>In order to submit interlibrary loan requests on behalf of a faculty or staff member, you must first fill out and submit a <a href="https://www.smith.edu/libraries/services/faculty/research-assistants">Research Assistant Proxy Library Card</a> application. Once you receive your Research Assistant Proxy Library Card, you may complete the user registration above. Note the following:</p>
@@ -743,6 +756,7 @@ This institution reserves the right to refuse to accept a copying order if, in i
     <li>For <b>Status</b>, choose "faculty" (or "staff" if you work for a staff member) and indicate the faculty member's department.</li>
     <li>For <b>Smith Email Address</b>, provide the faculty/staff member's email address. (All notifications will be sent to the faculty/staff member.)</li>
       </ul>
+-->
  <#INCLUDE filename='include_footer.html'>
 </div>
 
