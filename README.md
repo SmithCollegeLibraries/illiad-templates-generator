@@ -15,7 +15,8 @@ Things:
 python3 -m venv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-python3 make-illiad-templates.py
+npm install -g less
+bash render.sh
 ```
 
 ## First time or upgrade from Atlas
@@ -28,8 +29,7 @@ python3 make-illiad-templates.py
 
 ## Less css compiling
 ```
-npm install -g less
-bash compile-css.sh 
+render.sh compiles the css automatically
 ```
 
 ## Deployment
