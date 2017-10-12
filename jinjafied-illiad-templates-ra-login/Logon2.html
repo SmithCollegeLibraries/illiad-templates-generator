@@ -1,0 +1,76 @@
+
+{% extends "layouts/layout.html" %}
+{% block title %}Interlibrary Loan Login{% endblock %}
+
+{% block content %}
+<!-- Template file: {{ templateFilename }} -->
+<div id="wrap">
+    <div id="content-wrap">
+        <div class="col-sm-10">
+        <div id="status"><#STATUS></div>
+          <!-- MAIN CONTENT AREA -->
+<div>
+  <table border="0" cellspacing="0" cellpadding="0" class="smith-table-style-alt">
+<tbody>
+<tr>
+<td><strong><a href="https://login.libproxy.smith.edu/login?url=https://smithcollege.illiad.oclc.org/illiad/illiad.dll" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://login.libproxy.smith.edu/login?url%3Dhttps://smithcollege.illiad.oclc.org/illiad/illiad.dll&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNGv_SKSjabrHoDKQhx_HZoZMLeDoQ">Smith Login</a></strong></td>
+<td>Enter your Smith username and password.</td>
+</tr>
+<tr>
+<td><strong><a href="https://smithcollege.illiad.oclc.org/illiad/ra-login/logon.html" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://smithcollege.illiad.oclc.org/illiad/ra-login/logon.html&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNFFqXpWusEG6zSxvuyWsE2tD8EG3g">Research Assistants Login</a></strong></td>
+<td>Smith Faculty Research Assistants enter the username and password you created when registering.<br>Not registered? See&nbsp;<a href="https://www.smith.edu/libraries/services/faculty/research-assistants" target="_blank" data-saferedirecturl="https://www.google.com/url?hl=en&amp;q=https://www.smith.edu/libraries/services/faculty/research-assistants&amp;source=gmail&amp;ust=1507824121365000&amp;usg=AFQjCNFeCJ2dt564CYnmNnPjjZirvCuhXw">Faculty Research Assistants</a>.</td>
+</tr>
+</tbody>
+</table>
+  <!--
+ <form action="<#DLL>" class="f-wrap-1" method="post" name="Logon">
+  <input name="ILLiadForm" type="hidden" value="Logon"/>
+  <#FORMSTATE>
+  <div id="logonform">
+   <fieldset>
+    <h2>
+     {{ self.title() }}
+    </h2>
+       <p>Beginning Monday, October 9, 2017 your interlibrary loan login is your Smith username and password.</p>
+    <p><b>First time users</b> must register and create an interlibrary loan account username and password.<br />
+      <a href="illiad.dll?Action=10&Form=79">
+       Register for Interlibrary Loan
+      </a>
+    </p>
+    <label for="username">
+     <span class="field">
+      <b>
+       Username
+      </b>
+     </span>
+     <input class="f-name" id="username" name="Username" type="text"/>
+     <br/>
+    </label>
+    <label for="password">
+     <span class="field">
+      <b>
+       Password
+      </b>
+     </span>
+     <input class="f-name" id="password" name="Password" type="password"/>
+     <br/>
+    </label>
+    <div class="f-submit-wrap">
+      <button class="btn btn-primary" name="SubmitButton" value="Logon to ILLiad" type="submit">Login</button>
+     <br/>
+    </div>
+   </fieldset>
+  </div>
+ </form>
+ <form action="illiad.dll?Action=10&Form=79" id="RegisterForm" method="post" name="RegisterForm">
+  <#FORMSTATE>
+      <br>
+ </form>
+ -->
+ <#INCLUDE filename="include_footer.html">
+</div>
+
+          <!-- / MAIN CONTENT AREA -->
+        </div>
+    </div>
+{% endblock %}

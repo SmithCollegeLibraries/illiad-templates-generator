@@ -2,10 +2,15 @@
 import jinja2
 import glob, os
 import logging
+import argparse
+
 logging.basicConfig(level=logging.INFO)
 
-inputPath = 'jinjafied-illiad-templates'
-outputPath = 'rendered-illiad-templates'
+argparser = argparse.ArgumentParser()
+argparser.add_argument("inputPath", help="URL to xml output")
+argparser.add_argument("outputPath", help="URL to xml output")
+
+args = argparser.parse_args()
 
 # In this case, we will load templates off the filesystem.
 # This means we must construct a FileSystemLoader object.
@@ -19,7 +24,7 @@ templateLoader = jinja2.FileSystemLoader( searchpath="." )
 #   parse our templates.  We pass in the loader object here.
 templateEnv = jinja2.Environment( loader=templateLoader )
 
-for inputFile in glob.glob(inputPath + '/' + "*.html"):
+for inputFile in glob.glob(args.inputPath + '/' + "*.html"):
     logging.info('Parsing %s' % inputFile)
     inputFileBasename = os.path.basename( inputFile )
     templateName = inputFileBasename.replace('.html', '')
@@ -29,7 +34,7 @@ for inputFile in glob.glob(inputPath + '/' + "*.html"):
 
     # Specify any input variables to the template as a dictionary.
     templateVars = { "templateFilename" : inputFileBasename,  "templateName" : templateName}
-    outputFilePath = outputPath + '/' + inputFileBasename
+    outputFilePath = args.outputPath + '/' + inputFileBasename
 
     with open(outputFilePath, 'w') as f:
         # Finally, process the template to produce our final text.
