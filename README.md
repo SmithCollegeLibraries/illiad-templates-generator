@@ -28,9 +28,7 @@ python3 make-illiad-templates.py
 ```
 
 ## Less css compiling
-```
 render.sh compiles the css automatically
-```
 
 ## Deployment
 Copy the rendered files to the ftp folder, commit them, and then deploy to the server.
