@@ -39,6 +39,7 @@ cd ../illiad-folder/
 (commit changes)
 git ftp push -s testweb
 # Check results here: https://smithcollege.illiad.oclc.org/illiad/testweb/illiad.dll
+# Must log in here first: https://smithcollege.illiad.oclc.org/illiad/ra-login/illiad.dll
 
 # Deploy to production environment
 cp -r rendered-illiad-templates/* ../illiad-folder/
