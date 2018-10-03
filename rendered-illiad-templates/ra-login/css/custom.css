@@ -12,6 +12,7 @@ body h1 {
   /* Style help block */
   /* Position required field note for more visibly */
   /* Fine print styling*/
+  /* Temporary fix to make dropdowns display while JS is broken */
 }
 #illiad-content label[for="CallNumber"] {
   display: none;
@@ -71,4 +72,7 @@ body h1 {
 #illiad-content .fine-print {
   font-size: 80%;
   margin-top: 1.5em;
+}
+#illiad-content select {
+  visibility: visible;
 }
