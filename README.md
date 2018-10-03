@@ -38,12 +38,14 @@ cp -r rendered-illiad-templates/* ../illiad-folder/
 cd ../illiad-folder/
 (commit changes)
 git ftp push -s testweb
+# Check results here: https://smithcollege.illiad.oclc.org/illiad/testweb/illiad.dll
 
 # Deploy to production environment
 cp -r rendered-illiad-templates/* ../illiad-folder/
 cd ../illiad-folder/
 (commit changes)
 git ftp push -s prod
+
 ```
 
 ## Updating make-jinja-templates.py
