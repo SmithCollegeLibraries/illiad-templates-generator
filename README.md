@@ -37,9 +37,8 @@ Deploy to staging environment
 - Must log in here first: https://smithcollege.illiad.oclc.org/illiad/ra-login/illiad.dll
 
 # Deploy to production environment
-- FTP the contents of rendered-illiad-templates/* to the main illiad dir in the ftp site 
 
-```
+- FTP the contents of rendered-illiad-templates/* to the main illiad dir in the ftp site 
 
 ## Updating make-jinja-templates.py
 
