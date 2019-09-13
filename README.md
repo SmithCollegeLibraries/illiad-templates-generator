@@ -31,21 +31,13 @@ python3 make-illiad-templates.py
 render.sh compiles the css automatically
 
 ## Deployment
-Copy the rendered files to the ftp folder, commit them, and then deploy to the server.
-```
-# Deploy to staging environment
-cp -r rendered-illiad-templates/* ../illiad-folder/
-cd ../illiad-folder/
-(commit changes)
-git ftp push -s testweb
-# Check results here: https://smithcollege.illiad.oclc.org/illiad/testweb/illiad.dll
-# Must log in here first: https://smithcollege.illiad.oclc.org/illiad/ra-login/illiad.dll
+Deploy to staging environment
+- FTP the contents of rendered-illiad-templates/* to the testweb dir in the ftp site, overwriting all template code.
+- Check results here: https://smithcollege.illiad.oclc.org/illiad/testweb/illiad.dll
+- Must log in here first: https://smithcollege.illiad.oclc.org/illiad/ra-login/illiad.dll
 
 # Deploy to production environment
-cp -r rendered-illiad-templates/* ../illiad-folder/
-cd ../illiad-folder/
-(commit changes)
-git ftp push -s prod
+- FTP the contents of rendered-illiad-templates/* to the main illiad dir in the ftp site 
 
 ```
 
