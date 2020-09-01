@@ -19,6 +19,14 @@ npm install -g less
 bash render.sh
 ```
 
+If you're having issues with dependencies on your machine you can use the supplied vagrant:
+
+```
+vagrant up
+vagrant ssh
+cd /vagrant
+```
+
 ## First time or upgrade from Atlas
 ```
 python3 make-jinja-templates.py
@@ -35,6 +43,8 @@ Deploy to staging environment
 - FTP the contents of rendered-illiad-templates/* to the testweb dir in the ftp site, overwriting all template code.
 - Check results here: https://smithcollege.illiad.oclc.org/illiad/testweb/illiad.dll
 - Must log in here first: https://smithcollege.illiad.oclc.org/illiad/ra-login/illiad.dll
+
+Note that the file sizes reported by the FTP server are imprecise. E.g. AboutILLiad.html might be reported as being 25,996 while it's actually 25,446 on your local disk. When you do a transfer, if you chose to transfer based on size difference, the FTP client may transfer files that aren't actually different. Don't be alarmed by this.
 
 # Deploy to production environment
 
